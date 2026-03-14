@@ -743,53 +743,94 @@
 
     <!-- JSON-LD Person Schema -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://www.roshanrsivakumar.com/#person",
+  "name": "Roshan Rajkumar Sivakumar",
+  "givenName": "Roshan Rajkumar",
+  "familyName": "Sivakumar",
+  "alternateName": ["Roshan Sivakumar", "Roshan R Sivakumar", "Roshan Rajkumar"],
+  "url": "https://www.roshanrsivakumar.com",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.roshanrsivakumar.com/og-preview.jpg",
+    "caption": "Roshan Rajkumar Sivakumar — Operations Analytics Professional"
+  },
+  "jobTitle": "Operations Analytics Professional",
+  "description": "MBA + MS Decision Analytics graduate. Six Sigma Green Belt certified. Operations analytics professional specialising in process improvement, lean operations, KPI dashboard design, and data-driven decision making. Targeting Dubai, UAE.",
+  "email": "roshanrsivakumar@gmail.com",
+  "nationality": { "@type": "Country", "name": "India" },
+  "birthPlace": { "@type": "Place", "name": "Chennai, Tamil Nadu, India" },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Richmond",
+    "addressRegion": "Virginia",
+    "addressCountry": "US"
+  },
+  "alumniOf": [
     {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Roshan Rajkumar Sivakumar",
-      "alternateName": "Roshan Rajkumar Sivakumar",
-      "url": "https://www.roshanrsivakumar.com",
-      "image": "https://www.roshanrsivakumar.com/og-preview.jpg",
-      "jobTitle": "Operations Analytics Professional",
-      "description": "MBA + MS Decision Analytics candidate. Six Sigma Green Belt. Specialising in operations analytics, process improvement, lean operations, and data-driven decision making. Targeting Dubai, UAE.",
-      "email": "roshanrsivakumar@gmail.com",
-      "alumniOf": [
-        {
-          "@type": "CollegeOrUniversity",
-          "name": "Virginia Commonwealth University",
-          "address": { "@type": "PostalAddress", "addressLocality": "Richmond", "addressRegion": "VA", "addressCountry": "US" }
-        },
-        {
-          "@type": "CollegeOrUniversity",
-          "name": "Christ University",
-          "address": { "@type": "PostalAddress", "addressLocality": "Bengaluru", "addressCountry": "IN" }
-        },
-        {
-          "@type": "CollegeOrUniversity",
-          "name": "M. Kumarasamy College of Engineering",
-          "address": { "@type": "PostalAddress", "addressLocality": "Karur", "addressCountry": "IN" }
-        }
-      ],
-      "knowsAbout": [
-        "Operations Analytics", "Process Improvement", "Lean Operations", "Six Sigma", "Decision Analytics",
-        "KPI Dashboard Design", "Supply Chain Optimisation", "Digital Marketing Analytics",
-        "Python", "Power BI", "Data-Driven Decision Making", "Value Stream Mapping"
-      ],
-      "hasCredential": [
-        { "@type": "EducationalOccupationalCredential", "name": "Six Sigma Green Belt", "credentialCategory": "Professional Certification" },
-        { "@type": "EducationalOccupationalCredential", "name": "MBA — Lean Operations", "credentialCategory": "Graduate Degree" },
-        { "@type": "EducationalOccupationalCredential", "name": "MS Decision Analytics", "credentialCategory": "Graduate Degree" }
-      ],
-      "sameAs": [
-        "https://www.roshanrsivakumar.com"
-      ],
-      "seeks": {
-        "@type": "JobPosting",
-        "title": "Operations Analytics / Process Improvement",
-        "jobLocation": { "@type": "Place", "name": "Dubai, UAE" }
-      }
+      "@type": "EducationalOrganization",
+      "name": "Virginia Commonwealth University",
+      "url": "https://www.vcu.edu",
+      "address": { "@type": "PostalAddress", "addressLocality": "Richmond", "addressRegion": "VA", "addressCountry": "US" }
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Christ University",
+      "url": "https://christuniversity.in",
+      "address": { "@type": "PostalAddress", "addressLocality": "Bengaluru", "addressCountry": "IN" }
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "M. Kumarasamy College of Engineering",
+      "address": { "@type": "PostalAddress", "addressLocality": "Karur", "addressRegion": "Tamil Nadu", "addressCountry": "IN" }
     }
-    </script>
+  ],
+  "hasCredential": [
+    { "@type": "EducationalOccupationalCredential", "name": "Six Sigma Green Belt", "credentialCategory": "Professional Certification" },
+    { "@type": "EducationalOccupationalCredential", "name": "MBA — Lean Operations", "credentialCategory": "Graduate Degree", "educationalLevel": "Masters" },
+    { "@type": "EducationalOccupationalCredential", "name": "MS Decision Analytics", "credentialCategory": "Graduate Degree", "educationalLevel": "Masters" },
+    { "@type": "EducationalOccupationalCredential", "name": "BE Mechanical Engineering", "credentialCategory": "Undergraduate Degree", "educationalLevel": "Bachelors" }
+  ],
+  "knowsAbout": [
+    "Operations Analytics", "Process Improvement", "Lean Operations Management",
+    "Six Sigma", "Decision Analytics", "KPI Dashboard Design",
+    "Supply Chain Optimisation", "Value Stream Mapping",
+    "Digital Marketing Analytics", "Python Programming",
+    "Power BI", "Data-Driven Decision Making",
+    "Customer Segmentation", "AMPL Optimisation", "OEE Analysis"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Virginia Commonwealth University",
+    "description": "Front Desk Assistant, Residential Life and Housing"
+  },
+  "seeks": {
+    "@type": "JobPosting",
+    "title": "Operations Analytics / Process Improvement Analyst",
+    "jobLocation": { "@type": "Place", "name": "Dubai, UAE" }
+  },
+  "sameAs": [
+    "https://www.roshanrsivakumar.com",
+    "https://www.linkedin.com/in/roshanrsivakumar",
+    "https://www.wikidata.org/wiki/Roshan_Rajkumar_Sivakumar"
+  ],
+  "mainEntityOfPage": {
+    "@type": "ProfilePage",
+    "lastReviewed": "2026-03-14",
+    "url": "https://www.roshanrsivakumar.com"
+  },
+  "subjectOf": {
+    "@type": "ScholarlyArticle",
+    "name": "Lean Implementation in Indian Manufacturing",
+    "publisher": { "@type": "Organization", "name": "AIP Conference Proceedings" },
+    "datePublished": "2025-07",
+    "volumeNumber": "3300",
+    "issueNumber": "1"
+  }
+}
+</script>
   </head>
 <body data-lang="en">
   <div id="spotlight"></div>
