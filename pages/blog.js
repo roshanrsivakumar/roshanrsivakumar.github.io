@@ -10,7 +10,7 @@ const posts = [
     category: 'Leadership',
     date: 'March 2026',
     read: '5 min',
-    excerpt: 'No one is going to hand you the keys. The factory floor taught me that the only way to run something is to start running it — before you feel ready.',
+    excerpt: 'No one is going to hand you the keys. The factory floor taught me that the only way to run something is to start running it â before you feel ready.',
     tags: ['Leadership', 'Operations', 'Personal Growth'],
   },
   {
@@ -26,10 +26,12 @@ const posts = [
     slug: 'lean-thinking',
     title: 'Lean Thinking Is a Life Philosophy',
     category: 'Operations',
-    date: 'January 2026',
+    date: 'March 2026',
     read: '6 min',
-    excerpt: 'Remove the waste. Every system — manufacturing, personal, creative — has waste in it. The discipline of lean thinking is learning to see it.',
+    excerpt: 'Remove the waste. Every system â manufacturing, personal, creative â has waste in it. The discipline of lean thinking is learning to see it.',
     tags: ['Lean Manufacturing', 'Productivity', 'Mindset'],
+    href: 'https://roshanrsivakumar.blogspot.com/2026/03/lean-thinking-is-life-philosophy.html',
+    live: true,
   },
   {
     slug: 'taylor-swift-analytics',
@@ -55,7 +57,7 @@ const posts = [
     category: 'Social Impact',
     date: 'October 2025',
     read: '5 min',
-    excerpt: 'I had access to a family business and a mentorship network most people don\'t. That\'s not something to feel guilty about — it\'s something to multiply.',
+    excerpt: 'I had access to a family business and a mentorship network most people don\'t. That\'s not something to feel guilty about â it\'s something to multiply.',
     tags: ['Social Impact', 'Entrepreneurship', 'Community'],
   },
 ]
@@ -107,7 +109,7 @@ export default function Blog() {
       {/* Posts grid */}
       <section className="pb-24 max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {posts.map(({ slug, title, category, date, read, excerpt, tags }, i) => (
+          {posts.map(({ slug, title, category, date, read, excerpt, tags, href, live }, i) => (
             <motion.article
               key={slug}
               initial={{ opacity: 0, y: 40 }}
@@ -135,9 +137,15 @@ export default function Blog() {
                     <span key={tag} className="text-xs text-slate-600 border border-slate-800 px-2 py-0.5">{tag}</span>
                   ))}
                 </div>
-                <button className="inline-flex items-center gap-2 text-amber-500 text-sm font-body font-medium hover:gap-3 transition-all self-start">
-                  Read more <ArrowRight size={14} />
-                </button>
+                {live && href ? (
+                  <a href={href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-amber-500 text-sm font-body font-medium hover:gap-3 transition-all self-start">
+                    Read more <ArrowRight size={14} />
+                  </a>
+                ) : (
+                  <span className="inline-flex items-center gap-2 text-slate-600 text-sm font-body self-start cursor-default">
+                    Coming soon
+                  </span>
+                )}
               </div>
             </motion.article>
           ))}
