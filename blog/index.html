@@ -41,14 +41,6 @@
 
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  
-  
-  
-  
-  
-  
-  
-  
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
@@ -57,7 +49,7 @@
 </head>
 <body>
 <div id="pt-overlay"></div>
-<div class="lightbox" id="lightbox"><div class="lightbox-close">✕</div><img id="lightbox-img" src="" alt="Photo"/></div>
+<div class="lightbox" id="lightbox"><div class="lightbox-close">&#10005;</div><img id="lightbox-img" src="" alt="Photo"/></div>
 
 <nav class="nav">
   <a href="/" class="nav-logo">Roshan R Sivakumar</a>
@@ -66,8 +58,8 @@
     <li><a href="/about/">About</a></li>
     <li><a href="/mythrivehood/">myThrivehood</a></li>
     <li><a href="/life-at-christ/">Life at Christ</a></li>
-      <li><a href="/life-at-vcu/">Life at VCU <span class="nav-soon">Soon</span></a></li>
-    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/life-at-vcu/">Life at VCU <span class="nav-soon">Soon</span></a></li>
+    <li><a href="/blog/" class="nav-active">Blog</a></li>
     <li><a href="/contact/">Contact</a></li>
   </ul>
   <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -75,7 +67,7 @@
 
 <!-- HERO -->
 <section class="page-hero">
-  <p class="page-hero-label" data-reveal>Thoughts</p>
+  <p class="page-hero-label" data-reveal>Thoughts &amp; Stories</p>
   <h1 class="page-hero-title" data-reveal data-delay="1">The <span class="text-amber">Blog</span></h1>
   <p class="page-hero-sub" data-reveal data-delay="2">Ideas, stories, and perspectives from The Industrial Showman. Unfiltered. Honest. Worth reading.</p>
 </section>
@@ -84,65 +76,80 @@
 <section class="section">
   <div class="section-inner">
     <p class="section-eyebrow" data-reveal>Latest Posts</p>
-    <h2 data-reveal data-delay="1">4 Pieces Worth <span class="text-amber">Your Time</span></h2>
-    <p style="color:var(--text-muted);margin-top:.5rem;margin-bottom:3rem;max-width:560px;" data-reveal data-delay="2">Read the full story on each post — then follow through to Blogger for the complete version.</p>
+    <h2 data-reveal data-delay="1">5 Pieces Worth <span class="text-amber">Your Time</span></h2>
+    <p style="color:var(--text-muted);margin-top:.5rem;margin-bottom:3rem;max-width:560px;" data-reveal data-delay="2">Real writing on growth, strategy, and life. Follow through to Blogger for the complete version of each post.</p>
 
     <div style="display:flex;flex-direction:column;gap:2rem;">
-      <!-- Post 1 -->
-      <a href="/blog/stop-waiting-start-living/" class="blog-card" data-reveal data-delay="1">
+
+      <!-- Post 1 — Newest: Acceptance -->
+      <a href="/blog/acceptance-build-yourself/" class="blog-card" data-reveal data-delay="1">
         <div class="blog-card-thumb">
-          <img src="/images/IMG_1781.jpeg" alt="Roshan R Sivakumar — Stop Waiting Start Living, Blog by The Industrial Showman" loading="lazy"/>
+          <img src="/images/ROSHAN-RILEE-WASHINGTON-DC-CHERRY-BLOSSOMS.jpg" alt="Roshan R Sivakumar and Rilee under Washington DC cherry blossoms April 2026 — Acceptance blog post" loading="lazy"/>
         </div>
         <div class="blog-card-body">
-          <p class="blog-card-meta">Personal Growth · March 2026</p>
-          <h2 class="blog-card-title">Stop Waiting, Start Living</h2>
-          <p class="blog-card-excerpt">Most people are waiting. Waiting for the right time, the right opportunity, the right sign. This is the reminder you didn't know you needed — and the permission you were always allowed to give yourself.</p>
-          <span class="blog-card-link">Read Post →</span>
+          <p class="blog-card-meta">Personal Growth &middot; April 2026</p>
+          <h2 class="blog-card-title">Acceptance: When Life Gets Hard, Build Yourself</h2>
+          <p class="blog-card-excerpt">35 days before going back to India — a raw reflection on transformation, the Washington DC cherry blossoms trip with Rilee and Amala, and why building yourself is the answer when life feels heavy.</p>
+          <span class="blog-card-link">Read Post &#8594;</span>
         </div>
       </a>
 
       <!-- Post 2 -->
-      <a href="/blog/from-karur-to-dubai/" class="blog-card" data-reveal data-delay="2">
+      <a href="/blog/stop-waiting-start-living/" class="blog-card" data-reveal data-delay="2">
         <div class="blog-card-thumb">
-          <img src="/images/IMG_1819.jpg" alt="Roshan R Sivakumar — From Karur to Dubai Story, Blog by The Industrial Showman" loading="lazy"/>
+          <img src="/images/IMG_1781.jpeg" alt="Roshan R Sivakumar — Stop Waiting Start Living, Blog by The Industrial Showman" loading="lazy"/>
         </div>
         <div class="blog-card-body">
-          <p class="blog-card-meta">Life Story · March 2026</p>
-          <h2 class="blog-card-title">From Karur to Dubai</h2>
-          <p class="blog-card-excerpt">The story nobody tells you about moving from a small town to a big stage. What it really feels like to leave everything familiar and bet on yourself. Real, raw, and honest.</p>
-          <span class="blog-card-link">Read Post →</span>
+          <p class="blog-card-meta">Personal Growth &middot; March 2026</p>
+          <h2 class="blog-card-title">Stop Waiting, Start Living</h2>
+          <p class="blog-card-excerpt">Most people are waiting. Waiting for the right time, the right opportunity, the right sign. This is the reminder you didn't know you needed — and the permission you were always allowed to give yourself.</p>
+          <span class="blog-card-link">Read Post &#8594;</span>
         </div>
       </a>
 
       <!-- Post 3 -->
-      <a href="/blog/lean-thinking-life-philosophy/" class="blog-card" data-reveal data-delay="3">
+      <a href="/blog/from-karur-to-dubai/" class="blog-card" data-reveal data-delay="3">
         <div class="blog-card-thumb">
-          <img src="/images/IMG_2486.jpeg" alt="Roshan R Sivakumar — Lean Thinking Life Philosophy Blog, The Industrial Showman" loading="lazy"/>
+          <img src="/images/IMG_1819.jpg" alt="Roshan R Sivakumar — From Karur to Dubai Story, Blog by The Industrial Showman" loading="lazy"/>
         </div>
         <div class="blog-card-body">
-          <p class="blog-card-meta">Operations & Life · March 2026</p>
-          <h2 class="blog-card-title">Lean Thinking is a Life Philosophy</h2>
-          <p class="blog-card-excerpt">Lean manufacturing isn't just for factory floors. The principles that eliminate waste, optimise flow, and create value — they apply to everything. Your time, your relationships, your goals.</p>
-          <span class="blog-card-link">Read Post →</span>
+          <p class="blog-card-meta">Life Story &middot; March 2026</p>
+          <h2 class="blog-card-title">From Karur to Dubai</h2>
+          <p class="blog-card-excerpt">The story nobody tells you about moving from a small town to a big stage. What it really feels like to leave everything familiar and bet on yourself. Real, raw, and honest.</p>
+          <span class="blog-card-link">Read Post &#8594;</span>
         </div>
       </a>
 
       <!-- Post 4 -->
-      <a href="/blog/taylor-swift-marketing-genius/" class="blog-card" data-reveal data-delay="4">
+      <a href="/blog/lean-thinking-life-philosophy/" class="blog-card" data-reveal data-delay="4">
+        <div class="blog-card-thumb">
+          <img src="/images/IMG_2486.jpeg" alt="Roshan R Sivakumar — Lean Thinking Life Philosophy Blog, The Industrial Showman" loading="lazy"/>
+        </div>
+        <div class="blog-card-body">
+          <p class="blog-card-meta">Operations &amp; Life &middot; March 2026</p>
+          <h2 class="blog-card-title">Lean Thinking is a Life Philosophy</h2>
+          <p class="blog-card-excerpt">Lean manufacturing isn't just for factory floors. The principles that eliminate waste, optimise flow, and create value — they apply to everything. Your time, your relationships, your goals.</p>
+          <span class="blog-card-link">Read Post &#8594;</span>
+        </div>
+      </a>
+
+      <!-- Post 5 -->
+      <a href="/blog/taylor-swift-marketing-genius/" class="blog-card" data-reveal data-delay="5">
         <div class="blog-card-thumb">
           <img src="/images/IMG_1684.jpeg" alt="Roshan R Sivakumar — Taylor Swift Marketing Genius Blog, The Industrial Showman" loading="lazy"/>
         </div>
         <div class="blog-card-body">
-          <p class="blog-card-meta">Marketing & Strategy · March 2026</p>
+          <p class="blog-card-meta">Marketing &amp; Strategy &middot; March 2026</p>
           <h2 class="blog-card-title">Taylor Swift is a Marketing Genius</h2>
           <p class="blog-card-excerpt">Forget the music for a moment — study the strategy. Taylor Swift has executed one of the greatest brand-building campaigns in history. And every entrepreneur should be taking notes.</p>
-          <span class="blog-card-link">Read Post →</span>
+          <span class="blog-card-link">Read Post &#8594;</span>
         </div>
       </a>
+
     </div>
 
     <div style="text-align:center;margin-top:4rem;" data-reveal>
-      <a href="https://roshanrsivakumar.blogspot.com" target="_blank" rel="noopener" class="btn btn-outline">View All Posts on Blogger ↗</a>
+      <a href="https://roshanrsivakumar.blogspot.com" target="_blank" rel="noopener" class="btn btn-outline">View All Posts on Blogger &#8599;</a>
     </div>
   </div>
 </section>
@@ -156,6 +163,8 @@
   <div class="swiper photo-swiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide" data-lightbox="/images/HOME PAGE IMAGE.jpeg"><img src="/images/HOME PAGE IMAGE.jpeg" alt="Roshan R Sivakumar — The Industrial Showman" loading="lazy"/></div>
+      <div class="swiper-slide" data-lightbox="/images/ROSHAN-RILEE-WASHINGTON-DC-CHERRY-BLOSSOMS.jpg"><img src="/images/ROSHAN-RILEE-WASHINGTON-DC-CHERRY-BLOSSOMS.jpg" alt="Roshan R Sivakumar and Rilee — Washington DC Cherry Blossoms April 2026" loading="lazy"/></div>
+      <div class="swiper-slide" data-lightbox="/images/ROSHAN-RILEE-AMALA-WASHINGTON-DC.jpg"><img src="/images/ROSHAN-RILEE-AMALA-WASHINGTON-DC.jpg" alt="Roshan R Sivakumar with Rilee and Amala — Washington DC April 2026" loading="lazy"/></div>
       <div class="swiper-slide" data-lightbox="/images/CHRIST UNIVERSITY CENTRAL CAMPUS BUILDING.jpeg"><img src="/images/CHRIST UNIVERSITY CENTRAL CAMPUS BUILDING.jpeg" alt="Roshan R Sivakumar — Christ University Bangalore" loading="lazy"/></div>
       <div class="swiper-slide" data-lightbox="/images/RANDOM SELFIE WITH MY FRIENDS.JPG"><img src="/images/RANDOM SELFIE WITH MY FRIENDS.JPG" alt="Roshan R Sivakumar with Friends — Christ University Bangalore" loading="lazy"/></div>
       <div class="swiper-slide" data-lightbox="/images/ORGANISING TEAM AT USHUS.JPG"><img src="/images/ORGANISING TEAM AT USHUS.JPG" alt="Roshan R Sivakumar — USHUS National Fest, Christ University Bangalore" loading="lazy"/></div>
@@ -165,27 +174,6 @@
       <div class="swiper-slide" data-lightbox="/images/VARA FOUNDATION.JPG"><img src="/images/VARA FOUNDATION.JPG" alt="Roshan R Sivakumar — VARA Foundation" loading="lazy"/></div>
     </div>
   </div>
-      <!-- Blog Post: Acceptance -->
-      <article class="card blog-card" data-reveal data-delay="0">
-        <a href="/blog/acceptance-build-yourself/" style="display:block;overflow:hidden;border-radius:10px 10px 0 0;margin:-1.5rem -1.5rem 1.2rem;">
-          <img
-            src="/images/ROSHAN-RILEE-WASHINGTON-DC-CHERRY-BLOSSOMS.jpg"
-            alt="Roshan R Sivakumar and Rilee at Washington DC Cherry Blossom Festival 2026 — Acceptance blog post"
-            style="width:100%;height:200px;object-fit:cover;object-position:center;transition:transform .4s;"
-            onmouseover="this.style.transform='scale(1.04)'"
-            onmouseout="this.style.transform=''"
-            onerror="this.style.display='none'"
-          />
-        </a>
-        <div style="display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin-bottom:.7rem;">
-          <span style="font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sakura);">Personal Growth</span>
-          <span style="font-size:.7rem;color:var(--text-muted);">&middot; April 7, 2026 &middot; 6 min read</span>
-        </div>
-        <h2 class="card-title" style="font-size:1.2rem;margin-bottom:.6rem;">Acceptance: When Life Gets Hard, Build Yourself</h2>
-        <p class="card-body" style="font-size:.88rem;">35 days before going back to India &mdash; a raw reflection on transformation, the Washington DC cherry blossoms, and the people who change you.</p>
-        <a href="/blog/acceptance-build-yourself/" style="display:inline-block;margin-top:1.2rem;color:var(--sakura);font-weight:600;font-size:.88rem;">Read Post &rarr;</a>
-      </article>
-
 </section>
 
 <!-- FOOTER -->
@@ -200,7 +188,7 @@
         <a href="mailto:roshanrsivakumar@gmail.com" class="social-link"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Email</a>
       </div></div>
     </div>
-    <div class="footer-bottom"><p class="footer-copy">© 2026 Roshan R Sivakumar · The Industrial Showman. All rights reserved.</p></div>
+    <div class="footer-bottom"><p class="footer-copy">&#169; 2026 Roshan R Sivakumar &middot; The Industrial Showman. All rights reserved.</p></div>
   </div>
 </footer>
 
