@@ -1,37 +1,9 @@
 User-agent: *
 Allow: /
 
+# Block private/build directories
+Disallow: /404/
+Disallow: /.nojekyll
+
 # Sitemaps
 Sitemap: https://roshanrsivakumar.com/sitemap.xml
-
-# Google
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 1
-
-# Bing
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
-
-# Yandex
-User-agent: YandexBot
-Allow: /
-Crawl-delay: 2
-
-# Baidu
-User-agent: Baiduspider
-Allow: /
-Crawl-delay: 2
-
-# DuckDuckGo
-User-agent: DuckDuckBot
-Allow: /
-
-# Apple
-User-agent: Applebot
-Allow: /
-
-# Disallow build artifacts
-Disallow: /_next/
-Allow: /_next/static/
