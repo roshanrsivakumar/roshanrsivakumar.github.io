@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Life at VCU — Coming Soon — Roshan R Sivakumar</title>
+  <meta name="description" content="Roshan R Sivakumar's Life at Virginia Commonwealth University (VCU) — coming May 20, 2026. Part of the MBA + Master of Decision Analytics TVW cohort programme." />
+  <link rel="canonical" href="https://roshanrsivakumar.com/life-at-vcu/" />
+  <meta property="og:title" content="Life at VCU — Coming Soon — Roshan R Sivakumar" />
+  <meta property="og:description" content="The VCU chapter of Roshan R Sivakumar's journey — available May 20, 2026." />
+  <meta property="og:url" content="https://roshanrsivakumar.com/life-at-vcu/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","@id":"https://roshanrsivakumar.com/#person","name":"Roshan R Sivakumar","url":"https://roshanrsivakumar.com","alumniOf":{"@type":"CollegeOrUniversity","name":"Virginia Commonwealth University"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <style>
+    /* ── Coming Soon Page ─────────────────────── */
+    .cs-wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cs-card {
+      max-width: 580px;
+      width: 100%;
+      background: var(--bg-card);
+      border: 1.5px solid var(--sakura-border);
+      border-radius: 24px;
+      padding: 3.5rem 2.5rem;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 24px 80px rgba(200,90,118,.12);
+      position: relative;
+      z-index: 3;
+    }
+
+    .cs-petals-deco {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      display: block;
+      animation: float-petals 4s ease-in-out infinite;
+    }
+    @keyframes float-petals {
+      0%,100% { transform: translateY(0) rotate(-3deg); }
+      50%      { transform: translateY(-12px) rotate(3deg); }
+    }
+
+    .cs-label {
+      font-size: .72rem; font-weight: 700; letter-spacing: .2em;
+      text-transform: uppercase; color: var(--sakura);
+      margin-bottom: .8rem; display: block;
+    }
+
+    .cs-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: var(--text); margin: 0 0 .5rem;
+      line-height: 1.15;
+    }
+
+    .cs-subtitle {
+      font-size: 1rem; color: var(--text-muted); margin: .5rem 0 2rem;
+      line-height: 1.6;
+    }
+
+    /* Countdown ring */
+    .cs-date-ring {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 160px; height: 160px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--sakura-pale), rgba(90,122,80,.1));
+      border: 3px solid var(--sakura-mid);
+      margin: 0 auto 2rem;
+      box-shadow: 0 0 40px rgba(200,90,118,.15);
+      position: relative;
+    }
+    .cs-date-ring::after {
+      content: '';
+      position: absolute;
+      inset: -6px; border-radius: 50%;
+      border: 1.5px dashed var(--sakura-mid);
+      opacity: .4;
+      animation: ring-spin 20s linear infinite;
+    }
+    @keyframes ring-spin { to { transform: rotate(360deg); } }
+
+    .cs-date-day   { font-family: 'Playfair Display', serif; font-size: 2.8rem; color: var(--sakura); line-height: 1; }
+    .cs-date-month { font-size: .8rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--matcha); margin-top: .2rem; }
+    .cs-date-year  { font-size: .75rem; color: var(--text-muted); }
+
+    .cs-construction {
+      display: flex; align-items: center; justify-content: center; gap: .5rem;
+      background: rgba(90,122,80,.1); border: 1px solid rgba(90,122,80,.25);
+      border-radius: 30px; padding: .5rem 1.2rem; margin: 0 auto 1.5rem;
+      font-size: .82rem; font-weight: 600; color: var(--matcha);
+      width: fit-content;
+    }
+    .cs-construction::before {
+      content: '🌿';
+    }
+
+    .cs-body {
+      font-size: .9rem; color: var(--text-muted); line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .cs-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    .btn-back {
+      display: inline-flex; align-items: center; gap: .4rem;
+      padding: .75rem 1.8rem; border-radius: 28px;
+      background: var(--sakura); color: #fff;
+      font-weight: 600; font-size: .9rem; text-decoration: none;
+      transition: background .25s, transform .2s;
+    }
+    .btn-back:hover { background: var(--sakura-dark); transform: translateY(-2px); }
+
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: .4rem;
+      padding: .75rem 1.8rem; border-radius: 28px;
+      border: 1.5px solid var(--sakura-mid); color: var(--sakura);
+      background: transparent; font-weight: 600; font-size: .9rem;
+      text-decoration: none; transition: all .25s;
+    }
+    .btn-outline:hover { background: var(--sakura-pale); transform: translateY(-2px); }
+
+    /* Countdown timer */
+    .cs-countdown {
+      display: flex; gap: 1.2rem; justify-content: center; margin-bottom: 1.8rem;
+      flex-wrap: wrap;
+    }
+    .cd-block { text-align: center; }
+    .cd-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem; color: var(--text); line-height: 1;
+      background: var(--bg-card2, var(--bg2));
+      padding: .4rem .8rem; border-radius: 8px; min-width: 54px;
+      display: block;
+      border: 1px solid var(--sakura-border);
+    }
+    .cd-label { font-size: .65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: .1em; margin-top: .3rem; display: block; }
+
+    @media(max-width:480px){
+      .cs-card { padding:2.5rem 1.5rem; }
+      .cs-date-ring { width:130px; height:130px; }
+      .cs-date-day { font-size:2.2rem; }
+    }
+  </style>
+</head>
+<body>
+<div id="pt-overlay"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Roshan R Sivakumar</a>
+    <button class="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/about/">The Legacy</a></li>
+      <li><a href="/experience/">The Craft</a></li>
+      <li><a href="/education/">The Stages</a></li>
+      <li><a href="/life-at-christ/">Life at Christ</a></li>
+      <li><a href="/life-at-vcu/" class="active">Life at VCU <span class="nav-soon">Soon</span></a></li>
+      <li><a href="/blog/">Thoughts</a></li>
+      <li><a href="/contact/">Connect</a></li>
+      <li><a href="/mythrivehood/">myThrivehood</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- COMING SOON -->
+<div class="cs-wrapper">
+  <div class="cs-card" data-reveal>
+    <span class="cs-petals-deco">🌸</span>
+    <span class="cs-label">Under Construction</span>
+    <h1 class="cs-title">Life at VCU</h1>
+    <p class="cs-subtitle">The Virginia Commonwealth University chapter of Roshan R Sivakumar's story is being carefully crafted.</p>
+
+    <div class="cs-date-ring">
+      <span class="cs-date-day">20</span>
+      <span class="cs-date-month">May 2026</span>
+      <span class="cs-date-year">Available From</span>
+    </div>
+
+    <div class="cs-construction">Available May 20, 2026</div>
+
+    <!-- Live countdown -->
+    <div class="cs-countdown">
+      <div class="cd-block"><span class="cd-num" id="cd-days">--</span><span class="cd-label">Days</span></div>
+      <div class="cd-block"><span class="cd-num" id="cd-hours">--</span><span class="cd-label">Hours</span></div>
+      <div class="cd-block"><span class="cd-num" id="cd-mins">--</span><span class="cd-label">Minutes</span></div>
+      <div class="cd-block"><span class="cd-num" id="cd-secs">--</span><span class="cd-label">Seconds</span></div>
+    </div>
+
+    <p class="cs-body">
+      As part of the <strong>TVW cohort</strong> — the Christ University + VCU dual-degree programme — Roshan R Sivakumar is currently completing the
+      <strong>Master of Decision Analytics</strong> at Virginia Commonwealth University, Richmond, VA.
+      This page will document that journey in full once the VCU chapter is complete.
+    </p>
+
+    <div class="cs-actions">
+      <a href="/life-at-christ/" class="btn-back">← Life at Christ</a>
+      <a href="/" class="btn-outline">Back to Home</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-name">Roshan R Sivakumar</p>
+    <p class="footer-copy">© 2026 roshanrsivakumar.com · All rights reserved</p>
+  </div>
+</footer>
+
+<script>
+  /* Countdown to May 20, 2026 */
+  (function(){
+    const target = new Date('2026-05-20T00:00:00');
+    function update(){
+      const now  = new Date();
+      const diff = target - now;
+      if(diff <= 0){
+        document.getElementById('cd-days').textContent='0';
+        document.getElementById('cd-hours').textContent='0';
+        document.getElementById('cd-mins').textContent='0';
+        document.getElementById('cd-secs').textContent='0';
+        return;
+      }
+      const d = Math.floor(diff/864e5);
+      const h = Math.floor((diff%864e5)/36e5);
+      const m = Math.floor((diff%36e5)/6e4);
+      const s = Math.floor((diff%6e4)/1e3);
+      document.getElementById('cd-days').textContent  = d;
+      document.getElementById('cd-hours').textContent = String(h).padStart(2,'0');
+      document.getElementById('cd-mins').textContent  = String(m).padStart(2,'0');
+      document.getElementById('cd-secs').textContent  = String(s).padStart(2,'0');
+    }
+    update();
+    setInterval(update,1000);
+  })();
+</script>
+<script src="/assets/transitions.js"></script>
+</body>
+</html>

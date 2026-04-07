@@ -145,6 +145,138 @@
     });
   }
 
+  /* ── Cherry Blossom Wind Canvas ───────────────── */
+  function initSakuraPetals() {
+    const canvas = document.createElement('canvas');
+    canvas.id = 'sakura-canvas';
+    canvas.style.cssText = [
+      'position:fixed',
+      'top:0','left:0',
+      'width:100%','height:100%',
+      'pointer-events:none',
+      'z-index:1',
+      'opacity:1'
+    ].join(';');
+    document.body.insertBefore(canvas, document.body.firstChild);
+
+    const ctx = canvas.getContext('2d');
+    let W = canvas.width  = window.innerWidth;
+    let H = canvas.height = window.innerHeight;
+
+    window.addEventListener('resize', () => {
+      W = canvas.width  = window.innerWidth;
+      H = canvas.height = window.innerHeight;
+    }, { passive: true });
+
+    /* Palette */
+    const COLORS = [
+      '#E8849A', '#F4B8C8', '#C85A76',
+      '#D4A0B5', '#F0C8D8', '#FFB7C5',
+      '#FADADD', '#F9C4D0'
+    ];
+
+    /* Wind state — gentle, gusting */
+    let wind       = 0.4;
+    let targetWind = 0.4;
+    function scheduleGust() {
+      setTimeout(() => {
+        targetWind = (Math.random() - 0.25) * 2.8;
+        scheduleGust();
+      }, 2500 + Math.random() * 3500);
+    }
+    scheduleGust();
+
+    /* Draw one sakura petal shape */
+    function drawPetal(ctx, size, color) {
+      ctx.fillStyle = color;
+      /* Main lobe */
+      ctx.beginPath();
+      ctx.ellipse(0, -size * 0.2, size * 0.55, size * 0.9, 0, 0, Math.PI * 2);
+      ctx.fill();
+      /* Second lobe (offset for heart-like silhouette) */
+      ctx.globalAlpha *= 0.85;
+      ctx.beginPath();
+      ctx.ellipse(size * 0.3, -size * 0.15, size * 0.45, size * 0.75, 0.45, 0, Math.PI * 2);
+      ctx.fill();
+      /* Highlight */
+      ctx.globalAlpha *= 0.4;
+      ctx.fillStyle = '#fff';
+      ctx.beginPath();
+      ctx.ellipse(-size * 0.15, -size * 0.3, size * 0.2, size * 0.35, -0.3, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    /* Petal class */
+    class Petal {
+      constructor(init) { this.spawn(init); }
+
+      spawn(init) {
+        this.x        = Math.random() * (W + 200) - 100;
+        this.y        = init ? Math.random() * H : -20 - Math.random() * 80;
+        this.size     = 5 + Math.random() * 9;
+        this.vy       = 0.4 + Math.random() * 1.1;      /* fall speed */
+        this.vx       = (Math.random() - 0.4) * 0.8;    /* base drift */
+        this.rot      = Math.random() * Math.PI * 2;
+        this.rotV     = (Math.random() - 0.5) * 0.06;   /* tumble */
+        this.wobble   = Math.random() * Math.PI * 2;     /* sway phase */
+        this.wobbleHz = 0.018 + Math.random() * 0.025;  /* sway speed */
+        this.swayAmp  = 0.8 + Math.random() * 1.8;      /* sway width */
+        this.alpha    = 0.45 + Math.random() * 0.5;
+        this.color    = COLORS[Math.floor(Math.random() * COLORS.length)];
+        this.dead     = false;
+      }
+
+      update() {
+        this.wobble += this.wobbleHz;
+        const sway  = Math.sin(this.wobble) * this.swayAmp;
+        this.x += this.vx + sway + wind * (0.6 + this.size * 0.04);
+        this.y += this.vy;
+        this.rot += this.rotV + wind * 0.008;
+        if (this.y > H + 30 || this.x < -120 || this.x > W + 120) {
+          this.dead = true;
+        }
+      }
+
+      draw() {
+        ctx.save();
+        ctx.translate(this.x, this.y);
+        ctx.rotate(this.rot);
+        ctx.globalAlpha = this.alpha;
+        drawPetal(ctx, this.size, this.color);
+        ctx.restore();
+      }
+    }
+
+    /* Pool */
+    const MAX     = window.innerWidth < 600 ? 30 : 55;
+    const petals  = [];
+    for (let i = 0; i < MAX; i++) petals.push(new Petal(true));
+
+    /* Spawn new petals to replace dead ones */
+    let spawnTimer = 0;
+    function tick() {
+      ctx.clearRect(0, 0, W, H);
+      /* Smooth wind */
+      wind += (targetWind - wind) * 0.015;
+
+      /* Update & draw */
+      for (let i = petals.length - 1; i >= 0; i--) {
+        petals[i].update();
+        petals[i].draw();
+        if (petals[i].dead) petals.splice(i, 1);
+      }
+
+      /* Replenish */
+      spawnTimer++;
+      if (spawnTimer % 18 === 0 && petals.length < MAX) {
+        petals.push(new Petal(false));
+      }
+
+      requestAnimationFrame(tick);
+    }
+    tick();
+  }
+
   /* ── Swiper Carousel ──────────────────────────── */
   function initSwiper() {
     if (typeof Swiper === 'undefined') return;
@@ -222,6 +354,7 @@
   /* ── Init ─────────────────────────────────────── */
   document.addEventListener('DOMContentLoaded', () => {
     fadeIn();
+    initSakuraPetals();   /* canvas first so petals are behind content */
     initNav();
     initActiveNav();
     initReveal();
