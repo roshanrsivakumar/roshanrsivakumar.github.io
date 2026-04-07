@@ -78,6 +78,17 @@
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
     els.forEach(el => io.observe(el));
+    /* Fallback: force-reveal elements already in viewport on load */
+    setTimeout(() => {
+      els.forEach(el => {
+        if (el.classList.contains('revealed')) return;
+        const r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight && r.bottom > 0) {
+          const delay = parseInt(el.dataset.delay || 0) * 80;
+          setTimeout(() => el.classList.add('revealed'), delay);
+        }
+      });
+    }, 120);
   }
 
   /* ── Counter Animation ────────────────────────── */
