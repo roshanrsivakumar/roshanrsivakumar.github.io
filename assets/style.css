@@ -445,6 +445,8 @@ footer {
   opacity: 0; transform: translateY(28px);
   transition: opacity 0.75s ease, transform 0.75s ease;
 }
+/* Hero text is above the fold — always visible, no animation */
+.page-hero [data-reveal] { opacity: 1 !important; transform: none !important; transition: none !important; }
 [data-reveal="left"]  { transform: translateX(-28px); }
 [data-reveal="right"] { transform: translateX(28px); }
 [data-reveal="scale"] { transform: scale(0.92); opacity: 0; }
