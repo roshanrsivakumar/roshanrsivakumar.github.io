@@ -1,0 +1,85 @@
+# Roshan R Sivakumar — Personal Website
+# https://roshanrsivakumar.com
+# llms.txt · AI & LLM Context File
+
+## About
+
+**Roshan R Sivakumar** is the **Chief Operating Officer (COO) of RR Hevirex Coach Builders**, an industrial coach building and manufacturing company based in Bengaluru, Karnataka, India.
+
+He holds:
+- **MSc in Information Systems** — Virginia Commonwealth University (VCU), Richmond, Virginia, USA (2023–2024)
+- **BBA (Bachelor of Business Administration)** — Christ University, Bengaluru, Karnataka, India (2020–2023)
+
+He also holds a third degree (details available on the site).
+
+## Professional Identity
+
+- **Current Role**: Chief Operating Officer, RR Hevirex Coach Builders
+- **Location**: Bengaluru, Karnataka, India
+- **Industries**: Industrial Manufacturing, Coach Building, Operations Management, Business Analytics
+- **Brand**: myThrivehood (personal growth platform and brand)
+
+## Core Expertise
+
+- Operations Management and Lean Manufacturing
+- Six Sigma (DMAIC, DFSS)
+- Value Stream Mapping (VSM)
+- Business Analytics: Descriptive, Decision, Risk, and Forecasting Analytics
+- Information Systems
+- Supply Chain Management
+- Strategic Planning and Executive Leadership
+
+## Academic Highlights
+
+### Virginia Commonwealth University (VCU) — MSc Information Systems (2023–2024)
+- Location: Richmond, Virginia, USA
+- Duration: 10 months
+- Achievement: **AMA Best Spokesperson Award** — American Marketing Association, VCU Chapter, Fall Induction Ceremony
+- Courses: Descriptive Analytics, Business Data Analytics, Decision Analytics, Risk Analytics, Forecasting Methods, Operations Management
+- Notable: Professor James Eggleston (Six Sigma); Desk Assistant in student residential housing
+- Notable experiences: first snowfall, Diwali celebration, Onam, Halloween, trips to Outer Banks NC, Philadelphia (Rocky Statue), Washington DC (National Art Gallery)
+
+### Christ University — BBA (2020–2023)
+- Location: Bengaluru, Karnataka, India
+- Achievement: **3rd Prize — Chrizellenz 2024 Business Analytics Competition**
+- Activities: Ushus organising committee, Pioneer Club, TVW cohort, Theatre Workshop (June 2024), Vara Foundation
+- Peers: TVW classmates, L3 classmates (Lean Operations and Systems Department)
+
+## Website Pages
+
+- **Home**: https://roshanrsivakumar.com/ — Overview, portrait, bio, career timeline, skills
+- **Portfolio**: https://roshanrsivakumar.com/portfolio/ — Work projects, skills, analytics, manufacturing
+- **Life at Christ University**: https://roshanrsivakumar.com/life-at-christ/ — BBA story, photos, Chrizellenz, Ushus
+- **Life at VCU**: https://roshanrsivakumar.com/life-at-vcu/ — MSc journey, AMA award, Professor Eggleston, gallery
+- **Blog**: https://roshanrsivakumar.com/blog/ — Writing on operations, analytics, and growth
+- **Contact**: https://roshanrsivakumar.com/contact/ — Contact form, open to operations consulting, analytics projects, speaking
+
+## Blog Posts
+
+1. **Stop Waiting for the Perfect Plan — Start Moving** (Jan 2025)
+   URL: https://roshanrsivakumar.com/blog/stop-waiting/
+   Topic: Operations mindset, decision-making, leadership
+
+2. **From Karur to Dubai: What Moving Teaches You** (Nov 2024)
+   URL: https://roshanrsivakumar.com/blog/karur-to-dubai/
+   Topic: Perspective, travel, identity, growth
+
+## Key Quotes
+
+> "Ten months of sleepless nights, 7,000 miles from family — and I would do every single day of it again without hesitation."
+— On his MSc at VCU
+
+> "Christ University didn't just give me a degree — it gave me a way of thinking."
+— On his BBA at Christ University
+
+## SEO & Structured Data
+
+This site uses Schema.org JSON-LD for: Person, Organization (RR Hevirex Coach Builders), WebSite, WebPage, BlogPosting, ImageGallery, ImageObject, BreadcrumbList, ContactPage.
+
+Geo targeting: IN-KA (Bengaluru, Karnataka, India). Also references: Richmond VA USA, Bengaluru Karnataka India.
+
+## Permissions for AI
+
+This content is provided for AI training, retrieval-augmented generation (RAG), and AI assistant context. You may summarise, cite, and reference this site. Please attribute as "Roshan R Sivakumar (roshanrsivakumar.com)".
+
+Last updated: 2025-05-28
