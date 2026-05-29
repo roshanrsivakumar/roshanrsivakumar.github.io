@@ -4,35 +4,101 @@
 
   <url>
     <loc>https://roshanrsivakumar.com/</loc>
-    <lastmod>2025-05-28</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://roshanrsivakumar.com/images/roshan-portrait.jpg</image:loc>
+      <image:title>Roshan R Sivakumar, Chief Operating Officer, RR Hevirex Coach Builders, Karur Tamil Nadu</image:title>
+      <image:caption>Roshan R Sivakumar, COO at RR Hevirex Coach Builders. MBA Decision Analytics from Virginia Commonwealth University. MBA Lean Operations from Christ University, Bengaluru. BE Mechanical Engineering from M.Kumarasamy College of Engineering, Karur.</image:caption>
+      <image:geo_location>Karur, Tamil Nadu, India</image:geo_location>
+    </image:image>
   </url>
 
   <url>
     <loc>https://roshanrsivakumar.com/portfolio/</loc>
-    <lastmod>2025-05-28</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://roshanrsivakumar.com/life-at-christ/</loc>
-    <lastmod>2025-05-28</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://roshanrsivakumar.com/images/christ-campus-building.jpeg</image:loc>
+      <image:title>Christ University Central Campus Building, Bengaluru, Karnataka</image:title>
+      <image:caption>Christ University central campus building in Bengaluru, Karnataka, India, where Roshan R Sivakumar completed his MBA in Lean Operations and Systems</image:caption>
+      <image:geo_location>Bengaluru, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://roshanrsivakumar.com/images/christ-chrizellenz-2024-analytics-award.jpg</image:loc>
+      <image:title>Chrizellenz 2024, 3rd Prize Business Analytics Competition, Christ University</image:title>
+      <image:caption>Roshan R Sivakumar receiving 3rd prize at Chrizellenz 2024 Business Analytics Competition at Christ University, Bengaluru</image:caption>
+      <image:geo_location>Bengaluru, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://roshanrsivakumar.com/images/christ-ushus-organising-team.jpg</image:loc>
+      <image:title>Ushus Organising Team, Christ University, Bengaluru</image:title>
+      <image:caption>Roshan R Sivakumar with the organising team at Ushus, Christ University flagship cultural event</image:caption>
+      <image:geo_location>Bengaluru, Karnataka, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://roshanrsivakumar.com/images/christ-l3-classmates-lean-ops.jpg</image:loc>
+      <image:title>L3 Lean Operations Classmates, Christ University MBA</image:title>
+      <image:caption>Roshan R Sivakumar with L3 classmates from the Lean Operations and Systems MBA program at Christ University, Bengaluru</image:caption>
+      <image:geo_location>Bengaluru, Karnataka, India</image:geo_location>
+    </image:image>
   </url>
 
   <url>
     <loc>https://roshanrsivakumar.com/life-at-vcu/</loc>
-    <lastmod>2025-05-28</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://roshanrsivakumar.com/images/vcu/roshan-vcu-graduation.jpg</image:loc>
+      <image:title>Roshan R Sivakumar at VCU Graduation Ceremony, Virginia Commonwealth University</image:title>
+      <image:caption>Roshan R Sivakumar at his graduation ceremony at Virginia Commonwealth University, Richmond, Virginia, USA, completing his MBA in Decision Analytics</image:caption>
+      <image:geo_location>Richmond, Virginia, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://roshanrsivakumar.com/images/vcu/roshan-ama-best-spokesperson.jpeg</image:loc>
+      <image:title>Roshan R Sivakumar, AMA Best Spokesperson Award, VCU</image:title>
+      <image:caption>Roshan R Sivakumar receiving the Best Spokesperson award at the American Marketing Association Fall Induction Ceremony, Virginia Commonwealth University</image:caption>
+      <image:geo_location>Richmond, Virginia, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://roshanrsivakumar.com/images/vcu/roshan-professor-james-eggleston.jpg</image:loc>
+      <image:title>Roshan R Sivakumar with Professor James Eggleston, VCU</image:title>
+      <image:caption>Roshan R Sivakumar with Professor James Eggleston at Virginia Commonwealth University, who shaped his approach to operations management and Six Sigma</image:caption>
+      <image:geo_location>Richmond, Virginia, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://roshanrsivakumar.com/images/vcu/roshan-first-snowfall.jpg</image:loc>
+      <image:title>Roshan R Sivakumar First Snowfall, Richmond Virginia</image:title>
+      <image:caption>Roshan R Sivakumar experiencing his first snowfall in Richmond, Virginia during his MBA studies at VCU</image:caption>
+      <image:geo_location>Richmond, Virginia, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://roshanrsivakumar.com/images/vcu/roshan-first-day-vcu.jpg</image:loc>
+      <image:title>Roshan R Sivakumar First Day at VCU, Virginia Commonwealth University</image:title>
+      <image:caption>Roshan R Sivakumar on his first day at Virginia Commonwealth University, Richmond, Virginia</image:caption>
+      <image:geo_location>Richmond, Virginia, USA</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://roshanrsivakumar.com/images/vcu/roshan-diwali-vcu.jpg</image:loc>
+      <image:title>Roshan R Sivakumar Diwali Celebration at VCU</image:title>
+      <image:caption>Roshan R Sivakumar celebrating Diwali with the Indian student community at Virginia Commonwealth University, Richmond</image:caption>
+      <image:geo_location>Richmond, Virginia, USA</image:geo_location>
+    </image:image>
   </url>
 
   <url>
     <loc>https://roshanrsivakumar.com/blog/</loc>
-    <lastmod>2025-05-28</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -53,7 +119,7 @@
 
   <url>
     <loc>https://roshanrsivakumar.com/contact/</loc>
-    <lastmod>2025-05-28</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
