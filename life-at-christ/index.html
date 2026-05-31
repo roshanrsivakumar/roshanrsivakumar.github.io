@@ -20,71 +20,88 @@
   <meta property="og:url" content="https://roshanrsivakumar.com/life-at-christ/" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="/assets/style.css?v=7" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://roshanrsivakumar.com/#person","name":"Roshan R Sivakumar","alumniOf":[{"@type":"CollegeOrUniversity","name":"Christ University","address":{"@type":"PostalAddress","addressLocality":"Bengaluru","addressRegion":"Karnataka","addressCountry":"IN"}}]},{"@type":"WebPage","@id":"https://roshanrsivakumar.com/life-at-christ/#webpage","url":"https://roshanrsivakumar.com/life-at-christ/","name":"Life at Christ University Bengaluru | Roshan R Sivakumar","isPartOf":{"@id":"https://roshanrsivakumar.com/#website"},"about":{"@id":"https://roshanrsivakumar.com/#person"},"inLanguage":"en-US"},{"@type":"ImageGallery","name":"Life at Christ University Bengaluru Photo Gallery","url":"https://roshanrsivakumar.com/life-at-christ/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://roshanrsivakumar.com/#person","name":"Roshan R Sivakumar","alumniOf":[{"@type":"CollegeOrUniversity","name":"Christ University","address":{"@type":"PostalAddress","addressLocality":"Bengaluru","addressRegion":"Karnataka","addressCountry":"IN"}}]},{"@type":"WebPage","@id":"https://roshanrsivakumar.com/life-at-christ/#webpage","url":"https://roshanrsivakumar.com/life-at-christ/","name":"Life at Christ University Bengaluru | Roshan R Sivakumar","isPartOf":{"@id":"https://roshanrsivakumar.com/#website"},"about":{"@id":"https://roshanrsivakumar.com/#person"},"inLanguage":"en-US"}]}</script>
   <style>
     /* ── HERO ── */
-    .ch-hero { position:relative; min-height:90vh; display:flex; align-items:flex-end; overflow:hidden; }
-    .ch-hero-bg { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; }
-    .ch-hero-overlay { position:absolute; inset:0; background:linear-gradient(to top, rgba(15,20,30,.92) 0%, rgba(15,20,30,.3) 60%, transparent 100%); }
-    .ch-hero-content { position:relative; z-index:2; padding:3rem 2rem 4rem; max-width:860px; margin:0 auto; width:100%; }
-    .ch-hero-content h1 { font-size:clamp(2.4rem,6vw,4.2rem); font-weight:800; color:#fff; line-height:1.08; margin:0.5rem 0 1rem; }
-    .ch-hero-content p { font-size:1.1rem; color:rgba(255,255,255,.78); max-width:560px; line-height:1.75; }
-    .ch-eyebrow { font-size:.75rem; letter-spacing:.18em; text-transform:uppercase; color:var(--sakura-light,#e8809c); font-weight:600; }
+    .lc-hero { position:relative; min-height:92vh; display:flex; align-items:flex-end; overflow:hidden; }
+    .lc-hero-bg { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center top; }
+    .lc-hero-overlay { position:absolute; inset:0; background:linear-gradient(to top, rgba(10,14,22,.95) 0%, rgba(10,14,22,.45) 55%, rgba(10,14,22,.1) 100%); }
+    .lc-hero-content { position:relative; z-index:2; padding:0 2rem 5rem; max-width:900px; margin:0 auto; width:100%; }
+    .lc-hero-content h1 { font-size:clamp(2.6rem,6vw,4.4rem); font-weight:800; color:#fff; line-height:1.06; margin:.6rem 0 1.1rem; letter-spacing:-.02em; }
+    .lc-hero-content .lc-hero-lead { font-size:1.15rem; color:rgba(255,255,255,.75); max-width:600px; line-height:1.8; margin:0; }
+    .lc-eyebrow { font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; font-weight:700; color:#e8809c; }
 
     /* ── TAGS ── */
-    .tag-row { display:flex; flex-wrap:wrap; gap:.5rem; margin:1.25rem 0 0; }
-    .tag { background:rgba(201,64,112,.15); color:var(--sakura); border:1px solid rgba(201,64,112,.25); border-radius:100px; padding:.3rem .9rem; font-size:.78rem; font-weight:600; }
-    .tag-dark { background:rgba(255,255,255,.12); color:#fff; border:1px solid rgba(255,255,255,.2); border-radius:100px; padding:.3rem .9rem; font-size:.78rem; font-weight:600; }
+    .lc-tags { display:flex; flex-wrap:wrap; gap:.45rem; margin-top:1.5rem; }
+    .lc-tag { border-radius:100px; padding:.3rem 1rem; font-size:.77rem; font-weight:600; border:1px solid; }
+    .lc-tag-dark { background:rgba(255,255,255,.1); color:#fff; border-color:rgba(255,255,255,.18); }
+    .lc-tag-pink { background:rgba(201,64,112,.12); color:var(--sakura); border-color:rgba(201,64,112,.22); }
 
-    /* ── STORY SECTIONS ── */
-    .ch-story { max-width:1160px; margin:0 auto; padding:5rem 2rem; }
-    .ch-story + .ch-story { padding-top:0; }
+    /* ── SECTION SHELL ── */
+    .lc-sec { padding:6rem 0; }
+    .lc-sec-alt { background:var(--bg2); padding:6rem 0; }
+    .lc-wrap { max-width:1160px; margin:0 auto; padding:0 2.5rem; }
+    .lc-wrap-narrow { max-width:960px; margin:0 auto; padding:0 2.5rem; }
 
-    /* Text + side image */
-    .ch-col2 { display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:start; }
-    .ch-col2.flip { direction:rtl; }
-    .ch-col2.flip > * { direction:ltr; }
-    .ch-col3 { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
-    .ch-col2-3 { display:grid; grid-template-columns:1.1fr 1.9fr; gap:2rem; align-items:start; }
+    /* ── SECTION HEADER ── */
+    .lc-sec-header { margin-bottom:3.5rem; }
+    .lc-sec-header.center { text-align:center; }
+    .lc-sec-header h2 { font-size:clamp(1.7rem,3.5vw,2.4rem); font-weight:800; color:var(--text); line-height:1.2; margin:.5rem 0 .75rem; letter-spacing:-.02em; }
+    .lc-divider { width:3rem; height:3px; background:var(--sakura); border-radius:2px; margin:.75rem 0 1.25rem; }
+    .lc-sec-header.center .lc-divider { margin:.75rem auto 1.25rem; }
+    .lc-lead { font-size:1rem; color:var(--text-muted); line-height:1.85; max-width:640px; }
+    .lc-sec-header.center .lc-lead { margin:0 auto; }
 
-    /* Image blocks — NO crop, full natural height */
-    .ch-img { border-radius:14px; overflow:hidden; border:1px solid var(--border); }
-    .ch-img img { width:100%; height:auto; display:block; }
-    .ch-img-cap { font-size:.75rem; color:var(--text-muted); padding:.5rem .75rem; background:var(--bg2); border-top:1px solid var(--border); line-height:1.4; }
+    /* ── TWO-COLUMN LAYOUT ── */
+    .lc-split { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start; }
+    .lc-split.flip .lc-split-media { order:-1; }
 
-    /* Inline photo grid */
-    .ch-grid2 { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1.5rem; }
-    .ch-grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:1.5rem; }
-    .ch-grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin-top:1.5rem; }
+    /* ── IMAGE CARD ── */
+    .lc-img { border-radius:12px; overflow:hidden; border:1px solid var(--border); background:var(--bg2); }
+    .lc-img img { width:100%; height:auto; display:block; }
+    .lc-img-cap { font-size:.73rem; color:var(--text-muted); padding:.5rem .8rem; line-height:1.45; border-top:1px solid var(--border); }
 
-    /* Full-bleed image row */
-    .ch-fullrow { max-width:1160px; margin:0 auto 4rem; padding:0 2rem; }
+    /* ── PHOTO GRIDS ── */
+    .lc-g2 { display:grid; grid-template-columns:1fr 1fr; gap:.85rem; }
+    .lc-g3 { display:grid; grid-template-columns:repeat(3,1fr); gap:.85rem; }
+    .lc-g4 { display:grid; grid-template-columns:repeat(4,1fr); gap:.85rem; }
+    .lc-g6 { display:grid; grid-template-columns:repeat(6,1fr); gap:.75rem; }
+    .mt1 { margin-top:.85rem; }
+    .mt2 { margin-top:1.5rem; }
+    .mt3 { margin-top:2.5rem; }
 
-    /* Quote pull */
-    .ch-quote { border-left:3px solid var(--sakura); padding:1rem 1.5rem; margin:2rem 0; font-family:var(--ff-head); font-size:1.1rem; color:var(--text); font-style:italic; background:var(--sakura-pale); border-radius:0 10px 10px 0; }
+    /* ── PULL QUOTE ── */
+    .lc-quote { border-left:3px solid var(--sakura); padding:1rem 1.4rem; margin:2rem 0; font-size:1.08rem; font-style:italic; color:var(--text); background:var(--sakura-pale,rgba(201,64,112,.06)); border-radius:0 10px 10px 0; line-height:1.7; }
 
-    /* Alt bg sections */
-    .ch-alt { background:var(--bg2); }
-    .ch-alt .ch-story { padding-top:5rem; padding-bottom:5rem; }
+    /* ── BODY TEXT ── */
+    .lc-body p { color:var(--text-muted); line-height:1.85; margin-bottom:1rem; font-size:.97rem; }
+    .lc-body p:last-child { margin-bottom:0; }
+    .lc-body strong { color:var(--text); font-weight:700; }
 
-    /* Dividers */
-    .ch-wave { overflow:hidden; line-height:0; }
-    .ch-wave svg { display:block; width:100%; }
+    /* ── VIDEO ── */
+    .lc-video { border-radius:14px; overflow:hidden; background:#000; box-shadow:0 12px 48px rgba(0,0,0,.18); }
+    .lc-video video { width:100%; display:block; }
 
-    /* Video */
-    .ch-video { border-radius:16px; overflow:hidden; box-shadow:0 16px 60px rgba(26,40,53,.18); background:#000; }
-    .ch-video video { width:100%; display:block; }
+    /* ── FRIENDS HEADING ── */
+    .lc-sub-head { font-size:1.15rem; font-weight:700; color:var(--text); margin:3.5rem 0 1.25rem; }
+    .lc-sub-head.center { text-align:center; }
 
-    @media(max-width:900px){
-      .ch-col2,.ch-col2.flip,.ch-col2-3{ grid-template-columns:1fr; direction:ltr; }
-      .ch-col3,.ch-grid3,.ch-grid4{ grid-template-columns:1fr 1fr; }
+    /* ── RESPONSIVE ── */
+    @media(max-width:940px){
+      .lc-split { grid-template-columns:1fr; gap:2.5rem; }
+      .lc-split.flip .lc-split-media { order:0; }
+      .lc-g3,.lc-g4,.lc-g6 { grid-template-columns:1fr 1fr; }
     }
-    @media(max-width:520px){
-      .ch-col3,.ch-grid2,.ch-grid3,.ch-grid4{ grid-template-columns:1fr; }
+    @media(max-width:560px){
+      .lc-sec,.lc-sec-alt { padding:4rem 0; }
+      .lc-wrap,.lc-wrap-narrow { padding:0 1.25rem; }
+      .lc-g2,.lc-g3,.lc-g4,.lc-g6 { grid-template-columns:1fr; }
+      .lc-hero-content { padding:0 1.25rem 3.5rem; }
     }
   </style>
 </head>
 <body>
+
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="/" class="nav-brand">Roshan R Sivakumar</a>
@@ -100,377 +117,525 @@
     </div>
   </nav>
 
-  <!-- ══ HERO ══ -->
-  <section class="ch-hero" aria-label="Life at Christ University hero">
-    <img class="ch-hero-bg" src="/images/christ-tvw-obt-july-2024.jpg" alt="MBA TVW 2024–26 cohort group photo at Ramanagar Outbound Training — Roshan R Sivakumar with classmates, Christ University Bengaluru" width="1400" fetchpriority="high" />
-    <div class="ch-hero-overlay"></div>
-    <div class="ch-hero-content">
-      <p class="ch-eyebrow">Bengaluru, Karnataka, India &nbsp;·&nbsp; 2024 – 2026</p>
+  <!-- ══════════════════════════════════
+       HERO
+  ══════════════════════════════════ -->
+  <section class="lc-hero" aria-label="Life at Christ University hero">
+    <img class="lc-hero-bg" src="/images/christ-tvw-obt-july-2024.jpg"
+         alt="MBA TVW 2024–26 cohort at Ramanagar Outbound Training — Roshan R Sivakumar with classmates, Christ University Bengaluru"
+         width="1400" fetchpriority="high" />
+    <div class="lc-hero-overlay"></div>
+    <div class="lc-hero-content">
+      <p class="lc-eyebrow">Bengaluru, Karnataka, India &nbsp;·&nbsp; 2024 – 2026</p>
       <h1>Life at Christ University</h1>
-      <p>Two years that turned an introvert from Karur into someone who could walk into any room, start any conversation, and build something real.</p>
-      <div class="tag-row">
-        <span class="tag-dark">MBA Lean Operations</span>
-        <span class="tag-dark">Pioneer Club</span>
-        <span class="tag-dark">Ushus 2024 Organiser</span>
-        <span class="tag-dark">Chrizellenz 3rd Prize</span>
-        <span class="tag-dark">Basha Utsav</span>
-        <span class="tag-dark">OBT Ramanagar</span>
+      <p class="lc-hero-lead">Two years that turned a quiet introvert from Karur into someone who could walk into any room, start any conversation, and build something real.</p>
+      <div class="lc-tags">
+        <span class="lc-tag lc-tag-dark">MBA Lean Operations</span>
+        <span class="lc-tag lc-tag-dark">Pioneer Club</span>
+        <span class="lc-tag lc-tag-dark">Ushus 2024 Organiser</span>
+        <span class="lc-tag lc-tag-dark">Chrizellenz 3rd Prize</span>
+        <span class="lc-tag lc-tag-dark">Basha Utsav</span>
+        <span class="lc-tag lc-tag-dark">OBT Ramanagar</span>
       </div>
     </div>
   </section>
 
-  <!-- ══ 1. INTROVERT → EXTROVERT ══ -->
-  <div class="ch-story">
-    <div class="ch-col2">
-      <div data-reveal="left">
-        <p class="ch-eyebrow" style="color:var(--sakura)">The Transformation</p>
-        <h2 class="section-heading" style="margin-top:.5rem">From Introvert to Leader</h2>
-        <div class="divider"></div>
-        <p style="color:var(--text-muted);line-height:1.85;margin-bottom:1.1rem">When I arrived at Christ University from Karur, I was quiet. I kept to myself. I would observe before I spoke, and most of the time, I didn't speak at all.</p>
-        <p style="color:var(--text-muted);line-height:1.85;margin-bottom:1.1rem">Christ changed that. The MBA in Lean Operations pushed me into group projects, presentations, event organisation, and rooms full of people from every corner of India. I had no choice but to come out of my shell — and once I did, I never went back.</p>
-        <p style="color:var(--text-muted);line-height:1.85;margin-bottom:1.1rem">I started talking to people I would never have approached before. I built connections I still rely on today. I discovered that the difference between an introvert and a leader is usually just one decision — the decision to show up.</p>
-        <div class="ch-quote">"Christ University didn't just teach me Lean Operations — it taught me how to be in a room with people and make something happen."</div>
-        <div class="tag-row">
-          <span class="tag">MBA Lean Operations</span>
-          <span class="tag">Marketing</span>
-          <span class="tag">Financial Costing</span>
-        </div>
-      </div>
-      <div data-reveal="right">
-        <div class="ch-img">
-          <img src="/images/christ-first-day.jpg" alt="Roshan R Sivakumar on his first day at Christ University Bengaluru — the start of his MBA in Lean Operations and his journey from introvert to leader" width="700" loading="lazy" />
-          <div class="ch-img-cap">First day at Christ University | Bengaluru, 2024</div>
-        </div>
-        <div class="ch-grid2" style="margin-top:1rem">
-          <div class="ch-img">
-            <img src="/images/christ-campus-building.jpg" alt="Christ University entrance gate, Bengaluru, Karnataka, India" width="400" loading="lazy" />
-            <div class="ch-img-cap">Christ University | Bengaluru</div>
+  <!-- ══════════════════════════════════
+       1 · FROM INTROVERT TO LEADER
+  ══════════════════════════════════ -->
+  <section class="lc-sec" aria-labelledby="s1-heading">
+    <div class="lc-wrap">
+      <div class="lc-split">
+
+        <div class="lc-split-text" data-reveal="left">
+          <div class="lc-sec-header">
+            <p class="lc-eyebrow">The Transformation</p>
+            <h2 id="s1-heading">From Introvert to Leader</h2>
+            <div class="lc-divider"></div>
           </div>
-          <div class="ch-img">
-            <img src="/images/christ-campus-side-building.jpg" alt="School of Business and Management building, Christ University, Bengaluru" width="400" loading="lazy" />
-            <div class="ch-img-cap">School of Business &amp; Management</div>
+          <div class="lc-body">
+            <p>When I arrived at Christ University from Karur, I was quiet. I kept to myself. I would observe before I spoke, and most of the time, I didn't speak at all.</p>
+            <p>Christ changed that. The MBA in Lean Operations pushed me into group projects, presentations, event organisation, and rooms full of people from every corner of India. I had no choice but to come out of my shell — and once I did, I never went back.</p>
+            <p>I started talking to people I would never have approached before. I built connections I still rely on today. I discovered that the difference between an introvert and a leader is usually just one decision — the decision to show up.</p>
+          </div>
+          <div class="lc-quote">"Christ University didn't just teach me Lean Operations — it taught me how to be in a room with people and make something happen."</div>
+          <div class="lc-tags">
+            <span class="lc-tag lc-tag-pink">MBA Lean Operations</span>
+            <span class="lc-tag lc-tag-pink">Marketing</span>
+            <span class="lc-tag lc-tag-pink">Financial Costing</span>
           </div>
         </div>
+
+        <div class="lc-split-media" data-reveal="right">
+          <div class="lc-img">
+            <img src="/images/christ-first-day.jpg"
+                 alt="Roshan R Sivakumar on his first day at Christ University Bengaluru — the start of his MBA Lean Operations journey and transformation from introvert to leader"
+                 width="700" loading="lazy" />
+            <div class="lc-img-cap">First day at Christ University | Bengaluru, 2024</div>
+          </div>
+          <div class="lc-g2 mt1">
+            <div class="lc-img">
+              <img src="/images/christ-campus-building.jpg"
+                   alt="Christ University main campus building and entrance gate, Bengaluru, Karnataka, India"
+                   width="400" loading="lazy" />
+              <div class="lc-img-cap">Christ University Campus | Bengaluru</div>
+            </div>
+            <div class="lc-img">
+              <img src="/images/christ-campus-side-building.jpg"
+                   alt="School of Business and Management block at Christ University Bengaluru, Karnataka"
+                   width="400" loading="lazy" />
+              <div class="lc-img-cap">School of Business &amp; Management</div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- ══ 2. OBT ══ -->
-  <div class="ch-alt">
-    <div class="ch-wave"><svg viewBox="0 0 1440 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="transform:scaleY(-1)"><path d="M0,20 C480,40 960,0 1440,20 L1440,40 L0,40 Z" fill="var(--bg)"/></svg></div>
-    <div class="ch-story">
-      <div class="ch-col2 flip">
-        <div data-reveal="left">
-          <p class="ch-eyebrow" style="color:var(--sakura)">Outbound Training</p>
-          <h2 class="section-heading" style="margin-top:.5rem">OBT Ramanagar — Reading People</h2>
-          <div class="divider"></div>
-          <p style="color:var(--text-muted);line-height:1.85;margin-bottom:1.1rem">The Outbound Training at Ramanagar was my first time spending real time with my classmates outside the classroom. For a former introvert, it was everything.</p>
-          <p style="color:var(--text-muted);line-height:1.85;margin-bottom:1.1rem">I used it as a deliberate exercise in reading people. Away from formal settings, everyone's true personality emerges — who leads, who follows, who thrives under pressure, who shuts down. I observed all of it carefully, because I knew these were the people I would be building group projects with for the next two years.</p>
-          <p style="color:var(--text-muted);line-height:1.85">That trip gave me something no classroom could: a map of my cohort. I understood who to pair with for what, how to navigate conflict before it started, and how to get the best out of the people around me.</p>
-          <div class="ch-quote">"The trek up that hill with 40 strangers was the moment I stopped being a stranger."</div>
+  <!-- ══════════════════════════════════
+       2 · OBT RAMANAGAR
+  ══════════════════════════════════ -->
+  <section class="lc-sec-alt" aria-labelledby="s2-heading">
+    <div class="lc-wrap">
+      <div class="lc-split flip">
+
+        <div class="lc-split-text" data-reveal="right">
+          <div class="lc-sec-header">
+            <p class="lc-eyebrow">Outbound Training · July 2024</p>
+            <h2 id="s2-heading">OBT Ramanagar — Reading People</h2>
+            <div class="lc-divider"></div>
+          </div>
+          <div class="lc-body">
+            <p>The Outbound Training at Ramanagar was my first time spending real time with my classmates outside the classroom. For a former introvert, it was everything.</p>
+            <p>I used it as a deliberate exercise in reading people. Away from formal settings, everyone's true personality emerges — who leads, who follows, who thrives under pressure, who shuts down. I observed all of it carefully, because I knew these were the people I would be building group projects with for the next two years.</p>
+            <p>That trip gave me something no classroom could: a map of my cohort. I understood who to pair with for what, how to navigate conflict before it started, and how to get the best out of the people around me.</p>
+          </div>
+          <div class="lc-quote">"The trek up that hill with 40 strangers was the moment I stopped being a stranger."</div>
+        </div>
+
+        <div class="lc-split-media" data-reveal="left">
+          <div class="lc-img">
+            <img src="/images/christ-tvw-obt-july-2024.jpg"
+                 alt="MBA TVW 2024–26 cohort group photo at the top of Ramanagar hills during Outbound Training — Roshan R Sivakumar with Christ University classmates"
+                 width="700" loading="lazy" />
+            <div class="lc-img-cap">MBA TVW (2024–26) | OBT Ramanagar | July 2024</div>
+          </div>
+          <div class="lc-g2 mt1">
+            <div class="lc-img">
+              <img src="/images/christ-tvw-classmates.jpg"
+                   alt="Roshan R Sivakumar with MBA TVW classmates during Outbound Training at Ramanagar, Christ University Bengaluru"
+                   width="400" loading="lazy" />
+              <div class="lc-img-cap">TVW Classmates | OBT Ramanagar</div>
+            </div>
+            <div class="lc-img">
+              <img src="/images/christ-img-a.jpg"
+                   alt="Roshan R Sivakumar with MBA cohort members at Christ University Bengaluru"
+                   width="400" loading="lazy" />
+              <div class="lc-img-cap">MBA TVW | Christ University</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       3 · BACK TO SCHOOL
+  ══════════════════════════════════ -->
+  <section class="lc-sec" aria-labelledby="s3-heading">
+    <div class="lc-wrap">
+      <div class="lc-split">
+
+        <div class="lc-split-text" data-reveal="left">
+          <div class="lc-sec-header">
+            <p class="lc-eyebrow">School of Business &amp; Management · My Birthday</p>
+            <h2 id="s3-heading">Back to School — A Short Play &amp; a Lesson in People</h2>
+            <div class="lc-divider"></div>
+          </div>
+          <div class="lc-body">
+            <p><strong>Back to School</strong> is a cross-school event jointly conducted by the School of Business and Management and other schools at Christ University. Each class sends representatives who are given a theme, then must write and perform a short musical drama or play in front of a live audience and judges.</p>
+            <p>Our class participated. We didn't win — but that wasn't the point. Preparing a performance with people I had only recently met forced something no classroom activity could: I had to truly understand who my classmates were. How they think under creative pressure. Who steps up, who hangs back, who improvises, who over-plans. That is information you cannot get from a group project.</p>
+            <p>And it all happened on my birthday. Sharing that day — rehearsals, nerves, laughter, the stage — with a room full of people who were quickly becoming something more than classmates made it one of the most unexpectedly meaningful days of my time at Christ.</p>
+          </div>
+          <div class="lc-quote">"We didn't win the prize. But I walked out knowing my people — and that was worth far more."</div>
+          <div class="lc-tags">
+            <span class="lc-tag lc-tag-pink">Back to School</span>
+            <span class="lc-tag lc-tag-pink">Short Play Performance</span>
+            <span class="lc-tag lc-tag-pink">My Birthday 🎂</span>
+          </div>
+        </div>
+
+        <div class="lc-split-media" data-reveal="right">
+          <div class="lc-img">
+            <img src="/images/christ-tvw-back-to-school.jpg"
+                 alt="MBA TVW 2024–26 cohort at the Back to School event, Christ University Bengaluru — Roshan R Sivakumar celebrating his birthday with classmates performing a short play"
+                 width="700" loading="lazy" />
+            <div class="lc-img-cap">Back to School Event | TVW MBA 2024–26 | Christ University, Bengaluru — My Birthday 🎂</div>
+          </div>
+          <div class="lc-img mt1">
+            <img src="/images/christ-tvw-icebreaking.jpg"
+                 alt="MBA TVW 2024–26 icebreaking session at Christ University Bengaluru — cohort bonding activity during orientation"
+                 width="700" loading="lazy" />
+            <div class="lc-img-cap">TVW Icebreaking Session | Orientation | Christ University</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       4 · BASHA UTSAV
+  ══════════════════════════════════ -->
+  <section class="lc-sec-alt" aria-labelledby="s4-heading">
+    <div class="lc-wrap">
+      <div class="lc-split flip">
+
+        <div class="lc-split-text" data-reveal="right">
+          <div class="lc-sec-header">
+            <p class="lc-eyebrow">Basha Utsav — Ethnic Day</p>
+            <h2 id="s4-heading">Mini India in One Campus</h2>
+            <div class="lc-divider"></div>
+          </div>
+          <div class="lc-body">
+            <p>Christ University is not just a university — it is a small India. Students arrive from every state, every language, every tradition. Basha Utsav, the annual ethnic cultural day, is where all of that diversity becomes visible at once.</p>
+            <p>I represented South India — in traditional attire, with our food, our music, our language. But more than representing, I spent the day learning. I sat with students from the Northeast, from Bengal, from Rajasthan, and understood for the first time how differently people think, celebrate, and build community.</p>
+            <p>The ability to connect across culture, to find common ground with someone completely different from you — that is a leadership skill. Basha Utsav gave it to me in a single afternoon.</p>
+          </div>
+          <div class="lc-g2 mt2">
+            <div class="lc-img">
+              <img src="/images/christ-south-india-group.jpg"
+                   alt="Roshan R Sivakumar with the South India group at Basha Utsav ethnic cultural day, Christ University Bengaluru"
+                   width="400" loading="lazy" />
+              <div class="lc-img-cap">South India Group | Basha Utsav</div>
+            </div>
+            <div class="lc-img">
+              <img src="/images/christ-south-india-boys.jpg"
+                   alt="Roshan R Sivakumar with fellow South India representatives at Basha Utsav, Christ University Bengaluru"
+                   width="400" loading="lazy" />
+              <div class="lc-img-cap">Representing South India</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lc-split-media" data-reveal="left">
+          <div class="lc-img">
+            <img src="/images/christ-south-india-solo.jpg"
+                 alt="Roshan R Sivakumar in traditional South Indian white veshti and angavastram representing South India at Basha Utsav ethnic day, Christ University Bengaluru"
+                 width="700" loading="lazy" />
+            <div class="lc-img-cap">Basha Utsav | South India | Christ University, Bengaluru</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       5 · PIONEER CLUB + BTS VIDEO
+  ══════════════════════════════════ -->
+  <section class="lc-sec" aria-labelledby="s5-heading">
+    <div class="lc-wrap">
+
+      <div class="lc-sec-header center" data-reveal="fade">
+        <p class="lc-eyebrow">Pioneer Club</p>
+        <h2 id="s5-heading">Where I Found Event Management</h2>
+        <div class="lc-divider"></div>
+        <p class="lc-lead">Pioneer Club is where theory met reality. I joined from the very first event — Curtain Raiser — and worked through stage setup, logistics, promotions, and execution. Every event was a live case study in operations and marketing. It sparked my genuine interest in media and digital marketing.</p>
+      </div>
+
+      <!-- Main two photos -->
+      <div class="lc-split" style="margin-bottom:1.5rem">
+        <div class="lc-img" data-reveal="left">
+          <img src="/images/christ-first-pioneer-event.jpg"
+               alt="Roshan R Sivakumar receiving his badge at the Curtain Raiser — the first Pioneer Club event at Christ University Bengaluru"
+               width="700" loading="lazy" />
+          <div class="lc-img-cap">Curtain Raiser | First Pioneer Club Event | Christ University</div>
+        </div>
+        <div class="lc-img" data-reveal="right">
+          <img src="/images/christ-pioneer-stage-setup.jpg"
+               alt="Roshan R Sivakumar assisting with stage setup for a Pioneer Club flagship event at Christ University Bengaluru"
+               width="700" loading="lazy" />
+          <div class="lc-img-cap">Stage Setup | Pioneer Club Flagship Event</div>
+        </div>
+      </div>
+
+      <!-- Three-col grid -->
+      <div class="lc-g3">
+        <div class="lc-img" data-reveal="fade">
+          <img src="/images/christ-pioneer-icebreaking.jpg"
+               alt="Roshan R Sivakumar during Pioneer Club icebreaking session at Christ University Bengaluru"
+               width="400" loading="lazy" />
+          <div class="lc-img-cap">Pioneer Club Icebreaking Session</div>
+        </div>
+        <div class="lc-img" data-reveal="fade">
+          <img src="/images/christ-pioneer-audience.jpg"
+               alt="Roshan R Sivakumar with Pioneer Club members at an event at Christ University Bengaluru"
+               width="400" loading="lazy" />
+          <div class="lc-img-cap">Pioneer Club | Event Day</div>
+        </div>
+        <div class="lc-img" data-reveal="fade">
+          <img src="/images/christ-pioneer-informal.jpg"
+               alt="Roshan R Sivakumar with Pioneer Club team at the informal outing, Christ University Bengaluru"
+               width="400" loading="lazy" />
+          <div class="lc-img-cap">Pioneer Club | Informal Outing</div>
+        </div>
+      </div>
+
+      <!-- Two-col team photos -->
+      <div class="lc-g2 mt1">
+        <div class="lc-img" data-reveal="fade">
+          <img src="/images/christ-buddy-gopith.jpg"
+               alt="Roshan R Sivakumar with Gopith at a Pioneer Club event, Christ University Bengaluru"
+               width="400" loading="lazy" />
+          <div class="lc-img-cap">With Gopith | Pioneer Club</div>
+        </div>
+        <div class="lc-img" data-reveal="fade">
+          <img src="/images/christ-pioneer-setup.jpg"
+               alt="Roshan R Sivakumar with Pioneer Club team members at Christ University Bengaluru"
+               width="400" loading="lazy" />
+          <div class="lc-img-cap">Pioneer Club Team</div>
+        </div>
+      </div>
+
+      <!-- BTS VIDEO -->
+      <div class="mt3" data-reveal="fade">
+        <div style="margin-bottom:1.25rem">
+          <p class="lc-eyebrow" style="color:var(--sakura)">Behind the Scenes</p>
+          <h3 style="font-size:1.35rem;font-weight:800;color:var(--text);margin:.4rem 0 .5rem;letter-spacing:-.01em">Pioneer Club Promo Video — Directed by Roshan</h3>
+          <p style="color:var(--text-muted);font-size:.95rem;line-height:1.75;max-width:620px">The BTS footage from a promo video I directed for one of Pioneer Club's flagship events. The shoot that sparked my real interest in media, content, and digital marketing.</p>
+        </div>
+        <div class="lc-video">
+          <video controls preload="metadata"
+                 aria-label="Behind-the-scenes video of Pioneer Club flagship event promo directed by Roshan R Sivakumar at Christ University Bengaluru">
+            <source src="/images/christ-pioneer-bts.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       6 · CHRIZELLENZ → USHUS
+  ══════════════════════════════════ -->
+  <section class="lc-sec-alt" aria-labelledby="s6-heading">
+    <div class="lc-wrap">
+      <div class="lc-split">
+
+        <div class="lc-split-text" data-reveal="left">
+          <div class="lc-sec-header">
+            <p class="lc-eyebrow">Chrizellenz → Ushus</p>
+            <h2 id="s6-heading">Participant. Then Organiser.</h2>
+            <div class="lc-divider"></div>
+          </div>
+          <div class="lc-body">
+            <p><strong>Chrizellenz 2024</strong> is Christ University's flagship Business Analytics Competition. I entered as a participant with my team — the Dawgs — and we placed <strong>3rd</strong> with our data-driven strategy presentation.</p>
+            <p>That result earned me an invitation to join the <strong>Ushus 2024 organising team</strong>. Ushus is Christ University's national-level cultural and management festival — one of the biggest student-run events in South India. Going from competitor to organiser in the same year showed me what progression looks like when you put in the work.</p>
+          </div>
+          <div class="lc-quote">"You don't stay in the audience. You earn your way to the other side of the table."</div>
+          <div class="lc-tags">
+            <span class="lc-tag lc-tag-pink">Chrizellenz 3rd Prize</span>
+            <span class="lc-tag lc-tag-pink">Ushus 2024 Organiser</span>
+            <span class="lc-tag lc-tag-pink">Business Analytics</span>
+          </div>
+          <div class="lc-img mt2">
+            <img src="/images/christ-chrizellenz-team.jpg"
+                 alt="Roshan R Sivakumar with Team Dawgs at Chrizellenz 2024 Business Analytics Competition, Christ University Bengaluru — 3rd place winners"
+                 width="700" loading="lazy" />
+            <div class="lc-img-cap">Team Dawgs | Chrizellenz 2024 | 3rd Prize | Christ University</div>
+          </div>
+        </div>
+
+        <div class="lc-split-media" data-reveal="right">
+          <div class="lc-img">
+            <img src="/images/christ-ushus-organising-team.jpg"
+                 alt="Roshan R Sivakumar with the Ushus 2024 national festival organising team at Christ University Bengaluru"
+                 width="700" loading="lazy" />
+            <div class="lc-img-cap">Ushus 2024 Organising Team | Christ University, Bengaluru</div>
+          </div>
+          <div class="lc-g2 mt1">
+            <div class="lc-img">
+              <img src="/images/christ-ushus-day1.jpg"
+                   alt="Roshan R Sivakumar at Ushus 2024 Day One as part of the organising team, Christ University Bengaluru"
+                   width="400" loading="lazy" />
+              <div class="lc-img-cap">Ushus 2024 | Day One</div>
+            </div>
+            <div class="lc-img">
+              <img src="/images/christ-ushus-day2.jpg"
+                   alt="Roshan R Sivakumar at Ushus 2024 Day Two, organising team, Christ University Bengaluru"
+                   width="400" loading="lazy" />
+              <div class="lc-img-cap">Ushus 2024 | Day Two</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       7 · LEAN OPS / LEARNING
+  ══════════════════════════════════ -->
+  <section class="lc-sec" aria-labelledby="s7-heading">
+    <div class="lc-wrap">
+      <div class="lc-split flip">
+
+        <div class="lc-split-text" data-reveal="right">
+          <div class="lc-sec-header">
+            <p class="lc-eyebrow">The Curriculum</p>
+            <h2 id="s7-heading">Lean Ops, Marketing &amp; Finance</h2>
+            <div class="lc-divider"></div>
+          </div>
+          <div class="lc-body">
+            <p><strong>Lean Operations</strong> — the discipline of eliminating waste, designing efficient systems, and measuring what matters. This directly shapes how I run production at RR Hevirex Coach Builders every day.</p>
+            <p><strong>Marketing</strong> — I understood for the first time how to build a brand, communicate value, and think from a customer's perspective. That thinking feeds into myThrivehood and every piece of content I create.</p>
+            <p><strong>Financial costing</strong> — enough to read, understand, and manage the accounting documentation of a manufacturing business. I came in not knowing a balance sheet. I left knowing how to use one to make decisions.</p>
+          </div>
+          <div class="lc-g2 mt2">
+            <div class="lc-img">
+              <img src="/images/christ-img-2612.jpg"
+                   alt="Roshan R Sivakumar attending a lecture at Christ University Bengaluru during MBA Lean Operations programme"
+                   width="400" loading="lazy" />
+              <div class="lc-img-cap">MBA Lean Operations | Christ University</div>
+            </div>
+            <div class="lc-img">
+              <img src="/images/christ-img-2574.jpg"
+                   alt="Roshan R Sivakumar at Christ University Bengaluru during his MBA Lean Operations studies"
+                   width="400" loading="lazy" />
+              <div class="lc-img-cap">Christ University | Bengaluru</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lc-split-media" data-reveal="left">
+          <div class="lc-img">
+            <img src="/images/christ-img-2609.jpg"
+                 alt="Roshan R Sivakumar studying with a classmate at Christ University Bengaluru — MBA Lean Operations group work"
+                 width="700" loading="lazy" />
+            <div class="lc-img-cap">Studying Together | MBA Lean Operations | Christ University, Bengaluru</div>
+          </div>
+          <div class="lc-img mt1">
+            <img src="/images/christ-l3-classmates-lean-ops.jpg"
+                 alt="Roshan R Sivakumar with LOS-3 section classmates from Lean Operations and Systems department at Christ University Bengaluru"
+                 width="700" loading="lazy" />
+            <div class="lc-img-cap">LOS-3 Section | Lean Operations &amp; Systems | Farewell</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       8 · COMMUNITY
+  ══════════════════════════════════ -->
+  <section class="lc-sec-alt" aria-labelledby="s8-heading">
+    <div class="lc-wrap">
+
+      <div class="lc-sec-header center" data-reveal="fade">
+        <p class="lc-eyebrow">Community &amp; Events</p>
+        <h2 id="s8-heading">Theatre, Vara Foundation &amp; Giving Back</h2>
+        <div class="lc-divider"></div>
+        <p class="lc-lead">Beyond the curriculum — theatre workshops, community volunteering, cultural events, and the people who made Christ feel like home.</p>
+      </div>
+
+      <div class="lc-split" style="margin-bottom:1.5rem">
+        <div class="lc-img" data-reveal="left">
+          <img src="/images/christ-theatre-workshop-2024.jpg"
+               alt="Roshan R Sivakumar on stage during theatre workshop at Christ University Bengaluru, June 2024"
+               width="700" loading="lazy" />
+          <div class="lc-img-cap">Theatre Workshop | June 2024 | Christ University, Bengaluru</div>
         </div>
         <div data-reveal="right">
-          <div class="ch-img">
-            <img src="/images/christ-tvw-obt-july-2024.jpg" alt="MBA TVW 2024–26 cohort group photo at the top of Ramanagar hills during Outbound Training — Roshan R Sivakumar with his Christ University classmates" width="700" loading="lazy" />
-            <div class="ch-img-cap">MBA TVW (2024–26) | OBT Ramanagar — Different Destinations, Beautiful Memories Together</div>
+          <div class="lc-img">
+            <img src="/images/christ-vara-foundation.jpg"
+                 alt="Roshan R Sivakumar receiving volunteering certificate from Vara Foundation after completing community service in Bengaluru, Karnataka"
+                 width="700" loading="lazy" />
+            <div class="lc-img-cap">Vara Foundation | Volunteering Certificate | Bengaluru</div>
           </div>
-          <div class="ch-grid2" style="margin-top:1rem">
-            <div class="ch-img">
-              <img src="/images/christ-tvw-classmates.jpg" alt="Roshan R Sivakumar with MBA TVW classmates during Outbound Training, Christ University Bengaluru" width="400" loading="lazy" />
-              <div class="ch-img-cap">TVW Classmates | OBT</div>
-            </div>
-            <div class="ch-img">
-              <img src="/images/christ-img-a.jpg" alt="Roshan R Sivakumar with MBA cohort at Christ University Bengaluru" width="400" loading="lazy" />
-              <div class="ch-img-cap">MBA TVW | Christ University</div>
-            </div>
+          <div class="lc-img mt1">
+            <img src="/images/christ-cantata-event.jpg"
+                 alt="Roshan R Sivakumar with friends at Cantata 2024 cultural event, Christ University Bengaluru"
+                 width="700" loading="lazy" />
+            <div class="lc-img-cap">Cantata 2024 | Christ University, Bengaluru</div>
           </div>
         </div>
       </div>
+
+      <div class="lc-g2">
+        <div class="lc-img" data-reveal="fade">
+          <img src="/images/christ-altius-club.jpg"
+               alt="Roshan R Sivakumar at the inauguration of Altius Club 2024 at Christ University Bengaluru"
+               width="400" loading="lazy" />
+          <div class="lc-img-cap">Altius Club Inauguration 2024 | Christ University</div>
+        </div>
+        <div class="lc-img" data-reveal="fade">
+          <img src="/images/christ-vara-foundation2.jpg"
+               alt="Roshan R Sivakumar during Vara Foundation community service project in Bengaluru, Karnataka"
+               width="400" loading="lazy" />
+          <div class="lc-img-cap">Vara Foundation | Community Service | Bengaluru</div>
+        </div>
+      </div>
+
+      <!-- Friends -->
+      <p class="lc-sub-head center mt3" data-reveal="fade">The People Who Made It</p>
+      <div class="lc-g3">
+        <div class="lc-img" data-reveal="fade">
+          <img src="/images/christ-buddy-roshini.jpg"
+               alt="Roshan R Sivakumar with buddy Roshini at Christ University Bengaluru"
+               width="400" loading="lazy" />
+          <div class="lc-img-cap">With Buddy Roshini</div>
+        </div>
+        <div class="lc-img" data-reveal="fade">
+          <img src="/images/christ-buddy-logith.jpg"
+               alt="Roshan R Sivakumar with buddy Logith at Christ University Bengaluru"
+               width="400" loading="lazy" />
+          <div class="lc-img-cap">With Buddy Logith</div>
+        </div>
+        <div class="lc-img" data-reveal="fade">
+          <img src="/images/christ-buddy-sindhura.jpg"
+               alt="Roshan R Sivakumar with buddy Sindhura Lukka at Christ University Bengaluru"
+               width="400" loading="lazy" />
+          <div class="lc-img-cap">With Buddy Sindhura Lukka</div>
+        </div>
+        <div class="lc-img" data-reveal="fade">
+          <img src="/images/christ-friend-amar.jpg"
+               alt="Roshan R Sivakumar with friend Amar at Christ University Bengaluru"
+               width="400" loading="lazy" />
+          <div class="lc-img-cap">With Friend Amar</div>
+        </div>
+        <div class="lc-img" data-reveal="fade">
+          <img src="/images/christ-friends-group.jpg"
+               alt="Roshan R Sivakumar with a group of friends at Christ University Bengaluru"
+               width="400" loading="lazy" />
+          <div class="lc-img-cap">Friends at Christ University</div>
+        </div>
+        <div class="lc-img" data-reveal="fade">
+          <img src="/images/christ-friends-selfie.jpg"
+               alt="Roshan R Sivakumar candid selfie with friends at Christ University Bengaluru"
+               width="400" loading="lazy" />
+          <div class="lc-img-cap">Friends | Christ University</div>
+        </div>
+      </div>
+
     </div>
-    <div class="ch-wave"><svg viewBox="0 0 1440 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,20 C480,40 960,0 1440,20 L1440,40 L0,40 Z" fill="var(--bg)"/></svg></div>
-  </div>
-
-  <!-- ══ 3. BACK TO SCHOOL 2024 ══ -->
-  <div class="ch-story">
-    <div class="ch-col2 flip">
-      <div data-reveal="left">
-        <p class="ch-eyebrow" style="color:var(--sakura)">School of Business &amp; Management · My Birthday</p>
-        <h2 class="section-heading" style="margin-top:.5rem">Back to School — A Short Play &amp; a Lesson in People</h2>
-        <div class="divider"></div>
-        <p style="color:var(--text-muted);line-height:1.85;margin-bottom:1.1rem"><strong>Back to School</strong> is a cross-school event jointly conducted by the School of Business and Management and other schools at Christ University. Each class is asked to send representatives who are given a theme — and then tasked with writing and performing a short musical drama or play in front of a live audience and a judging panel.</p>
-        <p style="color:var(--text-muted);line-height:1.85;margin-bottom:1.1rem">Our class participated. We didn't win — but that wasn't the point. Preparing a performance with people I had only recently met forced something that no classroom activity could: I had to truly understand who my classmates were. How they think under creative pressure. Who steps up, who hangs back, who improvises, who over-plans. That is information you cannot get from a group project.</p>
-        <p style="color:var(--text-muted);line-height:1.85;margin-bottom:1.1rem">And it all happened on my birthday. Sharing that day — rehearsals, nerves, laughter, the stage — with a room full of people who were quickly becoming something more than classmates made it one of the most unexpectedly meaningful days of my time at Christ.</p>
-        <div class="ch-quote">"We didn't win the prize. But I walked out knowing my people — and that was worth far more."</div>
-        <div class="tag-row">
-          <span class="tag">Back to School</span>
-          <span class="tag">Short Play Performance</span>
-          <span class="tag">School of Business &amp; Management</span>
-          <span class="tag">My Birthday 🎂</span>
-        </div>
-      </div>
-      <div data-reveal="right">
-        <div class="ch-img">
-          <img src="/images/christ-tvw-back-to-school.jpg" alt="MBA TVW 2024–26 cohort at Back to School event at Christ University Bengaluru — Roshan R Sivakumar celebrating his birthday with classmates dressed in school uniforms" width="700" loading="lazy" />
-          <div class="ch-img-cap">Back to School Event | TVW MBA 2024–26 | Christ University, Bengaluru — My Birthday 🎂</div>
-        </div>
-        <div class="ch-img" style="margin-top:1rem">
-          <img src="/images/christ-tvw-icebreaking.jpg" alt="MBA TVW 2024–26 junior icebreaking session at Christ University Bengaluru — cohort bonding activity during orientation week" width="700" loading="lazy" />
-          <div class="ch-img-cap">TVW Junior Icebreaking Session | Orientation Week</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ══ 5. BASHA UTSAV ══ -->
-  <div class="ch-story">
-    <div class="ch-col2">
-      <div data-reveal="left">
-        <p class="ch-eyebrow" style="color:var(--sakura)">Basha Utsav — Ethnic Day</p>
-        <h2 class="section-heading" style="margin-top:.5rem">Mini India in One Campus</h2>
-        <div class="divider"></div>
-        <p style="color:var(--text-muted);line-height:1.85;margin-bottom:1.1rem">Christ University is not just a university — it is a small India. Students arrive from every state, every language, every tradition. Basha Utsav, the annual ethnic cultural day, is where all of that diversity becomes visible at once.</p>
-        <p style="color:var(--text-muted);line-height:1.85;margin-bottom:1.1rem">I represented South India — in traditional attire, with our food, our music, our language. But more than representing, I spent the day learning. I sat with students from the Northeast, from Bengal, from Rajasthan, and understood for the first time how differently people think, celebrate, and build community.</p>
-        <p style="color:var(--text-muted);line-height:1.85">The ability to connect across culture, to find common ground with someone completely different from you — that is a leadership skill. Basha Utsav gave it to me in a single afternoon.</p>
-        <div class="ch-grid2" style="margin-top:1.5rem">
-          <div class="ch-img">
-            <img src="/images/christ-south-india-group.jpg" alt="Roshan R Sivakumar with the South India group at Basha Utsav ethnic day, Christ University Bengaluru" width="400" loading="lazy" />
-            <div class="ch-img-cap">South India Group | Basha Utsav</div>
-          </div>
-          <div class="ch-img">
-            <img src="/images/christ-south-india-boys.jpg" alt="Roshan R Sivakumar with South India representatives at Basha Utsav, Christ University Bengaluru" width="400" loading="lazy" />
-            <div class="ch-img-cap">Representing South India</div>
-          </div>
-        </div>
-      </div>
-      <div data-reveal="right">
-        <div class="ch-img">
-          <img src="/images/christ-south-india-solo.jpg" alt="Roshan R Sivakumar in traditional South Indian attire — white dhoti and veshti with angavastram — representing South India at Basha Utsav ethnic day, Christ University Bengaluru" width="700" loading="lazy" />
-          <div class="ch-img-cap">Basha Utsav | Representing South India | Christ University, Bengaluru</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ══ 4. PIONEER CLUB ══ -->
-  <div class="ch-alt">
-    <div class="ch-wave"><svg viewBox="0 0 1440 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="transform:scaleY(-1)"><path d="M0,20 C480,40 960,0 1440,20 L1440,40 L0,40 Z" fill="var(--bg)"/></svg></div>
-    <div class="ch-story">
-      <p class="ch-eyebrow" style="color:var(--sakura);text-align:center" data-reveal="fade">Pioneer Club</p>
-      <h2 class="section-heading" style="text-align:center;margin:.5rem 0 .5rem" data-reveal="fade">Where I Found Event Management</h2>
-      <p style="color:var(--text-muted);text-align:center;max-width:640px;margin:0 auto 3rem;line-height:1.8" data-reveal="fade">Pioneer Club is where theory met reality. I joined from the first event — Curtain Raiser — and worked through stage setup, logistics, promotions, and execution. Every event was a live case study in operations and marketing. It also sparked my genuine interest in media and digital marketing.</p>
-
-      <div class="ch-col2" style="margin-bottom:3rem">
-        <div data-reveal="left">
-          <div class="ch-img">
-            <img src="/images/christ-first-pioneer-event.jpg" alt="Roshan R Sivakumar receiving his badge at the first Pioneer Club event, Curtain Raiser, Christ University Bengaluru" width="700" loading="lazy" />
-            <div class="ch-img-cap">Curtain Raiser | First Pioneer Club Event | Christ University</div>
-          </div>
-        </div>
-        <div data-reveal="right">
-          <div class="ch-img">
-            <img src="/images/christ-pioneer-stage-setup.jpg" alt="Roshan R Sivakumar during stage setup for Pioneer Club flagship event at Christ University Bengaluru" width="700" loading="lazy" />
-            <div class="ch-img-cap">Stage Setup | Pioneer Club Flagship Event</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ch-col3">
-        <div class="ch-img" data-reveal="fade">
-          <img src="/images/christ-pioneer-icebreaking.jpg" alt="Roshan R Sivakumar performing during Pioneer Club icebreaking session at Christ University Bengaluru" width="400" loading="lazy" />
-          <div class="ch-img-cap">Pioneer Club Icebreaking Session</div>
-        </div>
-        <div class="ch-img" data-reveal="fade">
-          <img src="/images/christ-pioneer-audience.jpg" alt="Roshan R Sivakumar with Pioneer Club members at an event at Christ University Bengaluru" width="400" loading="lazy" />
-          <div class="ch-img-cap">Pioneer Club | Event Day</div>
-        </div>
-        <div class="ch-img" data-reveal="fade">
-          <img src="/images/christ-pioneer-informal.jpg" alt="Roshan R Sivakumar with Pioneer Club team at final informal outing, Christ University Bengaluru" width="400" loading="lazy" />
-          <div class="ch-img-cap">Pioneer Club | Final Informal Outing</div>
-        </div>
-      </div>
-
-      <div class="ch-grid2" style="margin-top:1rem">
-        <div class="ch-img">
-          <img src="/images/christ-buddy-gopith.jpg" alt="Roshan R Sivakumar with buddy Gopith during Pioneer Club event at Christ University Bengaluru" width="400" loading="lazy" />
-          <div class="ch-img-cap">With Buddy Gopith | Pioneer Club</div>
-        </div>
-        <div class="ch-img">
-          <img src="/images/christ-pioneer-setup.jpg" alt="Roshan R Sivakumar with Pioneer Club team at Christ University Bengaluru" width="400" loading="lazy" />
-          <div class="ch-img-cap">Pioneer Club Team</div>
-        </div>
-      </div>
-    </div>
-    <div class="ch-wave"><svg viewBox="0 0 1440 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,20 C480,40 960,0 1440,20 L1440,40 L0,40 Z" fill="var(--bg)"/></svg></div>
-  </div>
-
-  <!-- ══ 5. CHRIZELLENZ + USHUS ══ -->
-  <div class="ch-story">
-    <div class="ch-col2">
-      <div data-reveal="left">
-        <p class="ch-eyebrow" style="color:var(--sakura)">Chrizellenz → Ushus</p>
-        <h2 class="section-heading" style="margin-top:.5rem">Participant. Then Organiser.</h2>
-        <div class="divider"></div>
-        <p style="color:var(--text-muted);line-height:1.85;margin-bottom:1.1rem"><strong>Chrizellenz 2024</strong> is Christ University's flagship Business Analytics Competition. I entered as a participant with my team — the Dawgs — and we placed <strong>3rd</strong> with our data-driven strategy presentation.</p>
-        <p style="color:var(--text-muted);line-height:1.85;margin-bottom:1.1rem">That result earned me an invitation to join the <strong>Ushus 2024 organising team</strong>. Ushus is Christ University's national-level cultural and management festival — one of the biggest student-run events in South India. Going from competitor to organiser in the same year showed me what progression looks like when you put in the work.</p>
-        <div class="ch-quote">"You don't stay in the audience. You earn your way to the other side of the table."</div>
-        <div class="tag-row">
-          <span class="tag">Chrizellenz 3rd Prize</span>
-          <span class="tag">Ushus 2024 Organiser</span>
-          <span class="tag">Business Analytics</span>
-        </div>
-        <div class="ch-img" style="margin-top:1.5rem">
-          <img src="/images/christ-chrizellenz-team.jpg" alt="Roshan R Sivakumar with Team Dawgs at Chrizellenz 2024 Business Analytics Competition, Christ University Bengaluru — 3rd place winners" width="700" loading="lazy" />
-          <div class="ch-img-cap">Team Dawgs | Chrizellenz 2024 | 3rd Prize | Christ University</div>
-        </div>
-      </div>
-      <div data-reveal="right">
-        <div class="ch-img">
-          <img src="/images/christ-ushus-organising-team.jpg" alt="Roshan R Sivakumar with the Ushus 2024 organising team at Christ University Bengaluru" width="700" loading="lazy" />
-          <div class="ch-img-cap">Ushus 2024 Organising Team | Christ University, Bengaluru</div>
-        </div>
-        <div class="ch-grid2" style="margin-top:1rem">
-          <div class="ch-img">
-            <img src="/images/christ-ushus-day1.jpg" alt="Roshan R Sivakumar at Ushus 2024 Day One as part of the organising team, Christ University Bengaluru" width="400" loading="lazy" />
-            <div class="ch-img-cap">Ushus 2024 | Day One</div>
-          </div>
-          <div class="ch-img">
-            <img src="/images/christ-ushus-day2.jpg" alt="Roshan R Sivakumar at Ushus 2024 Day Two, Christ University Bengaluru" width="400" loading="lazy" />
-            <div class="ch-img-cap">Ushus 2024 | Day Two</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ══ 6. LEARNING ══ -->
-  <div class="ch-alt">
-    <div class="ch-wave"><svg viewBox="0 0 1440 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="transform:scaleY(-1)"><path d="M0,20 C480,40 960,0 1440,20 L1440,40 L0,40 Z" fill="var(--bg)"/></svg></div>
-    <div class="ch-story">
-      <div class="ch-col2 flip">
-        <div data-reveal="right">
-          <p class="ch-eyebrow" style="color:var(--sakura)">The Curriculum</p>
-          <h2 class="section-heading" style="margin-top:.5rem">Lean Ops, Marketing &amp; Finance</h2>
-          <div class="divider"></div>
-          <p style="color:var(--text-muted);line-height:1.85;margin-bottom:1.1rem"><strong>Lean Operations</strong> — the discipline of eliminating waste, designing efficient systems, and measuring what matters. This directly shapes how I run production at RR Hevirex Coach Builders every day.</p>
-          <p style="color:var(--text-muted);line-height:1.85;margin-bottom:1.1rem"><strong>Marketing</strong> — I understood for the first time how to build a brand, communicate value, and think from a customer's perspective. That thinking feeds into myThrivehood and every piece of content I create.</p>
-          <p style="color:var(--text-muted);line-height:1.85"><strong>Financial costing</strong> — enough to read, understand, and manage the accounting documentation of a manufacturing business. I came in not knowing a balance sheet. I left knowing how to use one to make decisions.</p>
-          <div class="ch-grid2" style="margin-top:1.5rem">
-            <div class="ch-img">
-              <img src="/images/christ-img-2612.jpg" alt="Roshan R Sivakumar at a formal lecture event at Christ University Bengaluru during MBA Lean Operations" width="400" loading="lazy" />
-              <div class="ch-img-cap">MBA Lean Operations | Christ University</div>
-            </div>
-            <div class="ch-img">
-              <img src="/images/christ-img-2574.jpg" alt="Roshan R Sivakumar at Christ University Bengaluru during MBA studies" width="400" loading="lazy" />
-              <div class="ch-img-cap">Christ University | Bengaluru</div>
-            </div>
-          </div>
-        </div>
-        <div data-reveal="left">
-          <div class="ch-img">
-            <img src="/images/christ-img-2609.jpg" alt="Roshan R Sivakumar studying with a classmate at Christ University Bengaluru — MBA Lean Operations coursework and collaboration" width="700" loading="lazy" />
-            <div class="ch-img-cap">Studying together | MBA Lean Operations | Christ University, Bengaluru</div>
-          </div>
-          <div class="ch-img" style="margin-top:1rem">
-            <img src="/images/christ-l3-classmates-lean-ops.jpg" alt="Roshan R Sivakumar with LOS-3 classmates from Lean Operations and Systems department at Christ University Bengaluru" width="700" loading="lazy" />
-            <div class="ch-img-cap">LOS-3 Section | Lean Operations and Systems | Farewell</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="ch-wave"><svg viewBox="0 0 1440 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,20 C480,40 960,0 1440,20 L1440,40 L0,40 Z" fill="var(--bg)"/></svg></div>
-  </div>
-
-  <!-- ══ 7. COMMUNITY ══ -->
-  <div class="ch-story">
-    <p class="ch-eyebrow" style="color:var(--sakura);text-align:center" data-reveal="fade">Community &amp; Events</p>
-    <h2 class="section-heading" style="text-align:center;margin:.5rem 0 .5rem" data-reveal="fade">Theatre, Vara Foundation &amp; Friends</h2>
-    <p style="color:var(--text-muted);text-align:center;max-width:580px;margin:0 auto 3rem;line-height:1.8" data-reveal="fade">Beyond the curriculum — theatre workshops, volunteering, cultural events, and the people who made Christ feel like home.</p>
-
-    <div class="ch-col2" style="margin-bottom:2rem">
-      <div class="ch-img" data-reveal="left">
-        <img src="/images/christ-theatre-workshop-2024.jpg" alt="Roshan R Sivakumar on stage during theatre workshop at Christ University Bengaluru, June 2024" width="700" loading="lazy" />
-        <div class="ch-img-cap">Theatre Workshop | June 2024 | Christ University</div>
-      </div>
-      <div data-reveal="right">
-        <div class="ch-img">
-          <img src="/images/christ-vara-foundation.jpg" alt="Roshan R Sivakumar receiving volunteering certificate from Vara Foundation after completing community service, Bengaluru" width="700" loading="lazy" />
-          <div class="ch-img-cap">Vara Foundation | Volunteering Certificate | Bengaluru</div>
-        </div>
-        <div class="ch-img" style="margin-top:1rem">
-          <img src="/images/christ-cantata-event.jpg" alt="Roshan R Sivakumar with friends at Cantata 2024 cultural event, Christ University Bengaluru" width="700" loading="lazy" />
-          <div class="ch-img-cap">Cantata 2024 | Christ University</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="ch-grid2" style="margin-top:2rem">
-      <div class="ch-img" data-reveal="fade">
-        <img src="/images/christ-altius-club.jpg" alt="Roshan R Sivakumar at the inauguration of Altius Club 2024, Christ University Bengaluru" width="400" loading="lazy" />
-        <div class="ch-img-cap">Altius Club Inauguration 2024</div>
-      </div>
-      <div class="ch-img" data-reveal="fade">
-        <img src="/images/christ-vara-foundation2.jpg" alt="Roshan R Sivakumar volunteering with Vara Foundation community service project, Bengaluru, Karnataka" width="400" loading="lazy" />
-        <div class="ch-img-cap">Vara Foundation | Community Service</div>
-      </div>
-    </div>
-
-    <!-- Friends grid -->
-    <h3 style="font-size:1.2rem;font-weight:700;color:var(--text);margin:3rem 0 1.25rem;text-align:center">The People Who Made It</h3>
-    <div class="ch-col3">
-      <div class="ch-img" data-reveal="fade">
-        <img src="/images/christ-buddy-roshini.jpg" alt="Roshan R Sivakumar with buddy Roshini at Christ University Bengaluru" width="400" loading="lazy" />
-        <div class="ch-img-cap">With Buddy Roshini</div>
-      </div>
-      <div class="ch-img" data-reveal="fade">
-        <img src="/images/christ-buddy-logith.jpg" alt="Roshan R Sivakumar with buddy Logith at Christ University Bengaluru" width="400" loading="lazy" />
-        <div class="ch-img-cap">With Buddy Logith</div>
-      </div>
-      <div class="ch-img" data-reveal="fade">
-        <img src="/images/christ-buddy-sindhura.jpg" alt="Roshan R Sivakumar with buddy Sindhura Lukka at Christ University Bengaluru" width="400" loading="lazy" />
-        <div class="ch-img-cap">With Buddy Sindhura Lukka</div>
-      </div>
-      <div class="ch-img" data-reveal="fade">
-        <img src="/images/christ-friend-amar.jpg" alt="Roshan R Sivakumar with friend Amar at Christ University Bengaluru" width="400" loading="lazy" />
-        <div class="ch-img-cap">With Friend Amar</div>
-      </div>
-      <div class="ch-img" data-reveal="fade">
-        <img src="/images/christ-friends-group.jpg" alt="Roshan R Sivakumar with friends at Christ University Bengaluru" width="400" loading="lazy" />
-        <div class="ch-img-cap">Friends at Christ University</div>
-      </div>
-      <div class="ch-img" data-reveal="fade">
-        <img src="/images/christ-friends-selfie.jpg" alt="Roshan R Sivakumar and friends candid moment at Christ University Bengaluru" width="400" loading="lazy" />
-        <div class="ch-img-cap">Friends | Christ University</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ══ 8. VIDEO ══ -->
-  <div class="ch-alt">
-    <div class="ch-wave"><svg viewBox="0 0 1440 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="transform:scaleY(-1)"><path d="M0,20 C480,40 960,0 1440,20 L1440,40 L0,40 Z" fill="var(--bg)"/></svg></div>
-    <div class="ch-story" style="max-width:960px;">
-      <p class="ch-eyebrow" style="color:var(--sakura)" data-reveal="fade">Behind the Scenes</p>
-      <h2 class="section-heading" style="margin:.5rem 0 .75rem" data-reveal="fade">Pioneer Club Promo — Directed by Roshan</h2>
-      <p style="color:var(--text-muted);margin-bottom:2rem;max-width:540px;line-height:1.8" data-reveal="fade">The BTS footage from a promo video Roshan directed for one of Pioneer Club's flagship events at Christ University. The moment that sparked his interest in media and digital marketing.</p>
-      <div class="ch-video" data-reveal="fade">
-        <video controls preload="metadata" aria-label="Behind the scenes of Pioneer Club flagship event promo directed by Roshan R Sivakumar at Christ University Bengaluru — the start of his media marketing journey">
-          <source src="/images/christ-pioneer-bts.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-    <div class="ch-wave"><svg viewBox="0 0 1440 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,20 C480,40 960,0 1440,20 L1440,40 L0,40 Z" fill="var(--bg)"/></svg></div>
-  </div>
+  </section>
 
   <footer role="contentinfo">
     <div class="footer-inner">
       <div class="footer-top">
-        <div><p class="footer-brand-name">Roshan R Sivakumar</p><p class="footer-brand-tagline">COO | RR Hevirex Coach Builders The Industrial Showman</p></div>
+        <div><p class="footer-brand-name">Roshan R Sivakumar</p><p class="footer-brand-tagline">COO | RR Hevirex Coach Builders · The Industrial Showman</p></div>
         <nav aria-label="Pages"><p class="footer-nav-title">Pages</p><ul class="footer-nav-links" role="list"><li><a href="/">Home</a></li><li><a href="/portfolio/">Portfolio</a></li><li><a href="/life-at-christ/">Life at Christ</a></li><li><a href="/life-at-vcu/">Life at VCU</a></li></ul></nav>
         <nav aria-label="More"><p class="footer-nav-title">More</p><ul class="footer-nav-links" role="list"><li><a href="/blog/">Blog</a></li><li><a href="/contact/">Contact</a></li></ul></nav>
       </div>
       <div class="footer-bottom"><p class="footer-copy">&copy; 2025 Roshan R Sivakumar | Karur, Tamil Nadu, India</p></div>
     </div>
   </footer>
+
   <script>
     document.body.classList.add('loaded');
     const t=document.getElementById('navToggle'),l=document.getElementById('navLinks');
